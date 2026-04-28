@@ -394,7 +394,7 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
     <div class="sec-label">Agregar examen</div>
     <div style="display:grid;grid-template-columns:1fr 1fr 150px auto;gap:8px;align-items:end;flex-wrap:wrap">
       <div><div style="font-size:11px;color:var(--text2);margin-bottom:4px">Nombre</div><input class="inp" id="ex-n" placeholder="Ej: Parcial 1"></div>
-      <div><div style="font-size:11px;color:var(--text2);margin-bottom:4px">Materia</div><select class="inp" id="ex-m"></select></div>
+      <div><div style="font-size:11px;color:var(--text2);margin-bottom:4px">Materia</div><input class="inp" id="ex-m" placeholder="Ej: Bases de Datos"></div>
       <div><div style="font-size:11px;color:var(--text2);margin-bottom:4px">Fecha</div><input class="inp" type="date" id="ex-f"></div>
       <button class="btn btn-bordo" onclick="addExamen()">Agregar</button>
     </div>
@@ -695,23 +695,7 @@ function renderMaterias(){
     return`<div class="year-hdr">${y.year}</div>${cyear}`;
   }).join('');
 }
-function loadMateriasSelect(){
-  const sel=document.getElementById('ex-m');
-  if(!sel) return;
 
-  sel.innerHTML = '<option value="">Seleccionar materia</option>';
-
-  MATERIAS.forEach(y=>{
-    y.cuatris.forEach(c=>{
-      c.subjects.forEach(s=>{
-        const opt=document.createElement('option');
-        opt.value = s.name;
-        opt.textContent = s.name;
-        sel.appendChild(opt);
-      });
-    });
-  });
-}
 /* ── DASHBOARD STATS ── */
 function renderDashStats(){
   let ap=0,cu=0,fp=0;
@@ -764,19 +748,12 @@ function renderExamenes(){
 }
 function addExamen(){
   const n=document.getElementById('ex-n').value.trim();
-  const m=document.getElementById('ex-m').value;
+  const m=document.getElementById('ex-m').value.trim();
   const f=document.getElementById('ex-f').value;
-
-  if(!n || !f || !m) return; // Ahora exige materia
-
-  ST.examenes.push({id:Date.now(),n,m,f});
-
-  ['ex-n','ex-f'].forEach(id=>document.getElementById(id).value='');
-  document.getElementById('ex-m').value='';
-
-  save();
-  renderExamenes();
-}
+  if(!n||!f)return;
+  ST.examenes.push({id:Date.now(),n,m:m||'General',f});
+  ['ex-n','ex-m','ex-f'].forEach(id=>document.getElementById(id).value='');
+  save();renderExamenes();
 }
 function rmExamen(id){ST.examenes=ST.examenes.filter(e=>e.id!==id);save();renderExamenes();}
 
@@ -939,7 +916,6 @@ renderTasks();
 renderObjetivos();
 renderXP();
 updatePomo();
-loadMateriasSelect();
 document.getElementById('pomo-sessions').textContent=ST.pomoSessions||0;
 </script>
 </body>
