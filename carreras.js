@@ -1,0 +1,6507 @@
+const CARRERAS_DB = [
+  {
+    "nombre": "LICENCIATURA EN ENFERMERÍA",
+    "anios": [
+      {
+        "numero": 1,
+        "cuatris": [
+          {
+            "numero": 1,
+            "subjects": [
+              {
+                "code": "01",
+                "name": "INTRODUCCIÓN A LA ENFERMERÍA",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "02",
+                "name": "CIENCIAS BIOLÓGICAS I",
+                "correlativas": [
+                  "80"
+                ]
+              },
+              {
+                "code": "03",
+                "name": "SOCIEDAD, ESTADO Y SALUD",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "04",
+                "name": "TALLER DE INFORMÁTICA I",
+                "correlativas": [
+                  "32"
+                ]
+              },
+              {
+                "code": "05",
+                "name": "TALLER DE COMUNICACIÓN ORAL Y ESCRITA",
+                "correlativas": []
+              },
+              {
+                "code": "32",
+                "name": "1er Año",
+                "correlativas": []
+              },
+              {
+                "code": "11",
+                "name": "NUTRICIÓN Y DIETOTERAPIA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "12",
+                "name": "ENFERMERÍA DEL ADULTO Y DEL ANCIANO",
+                "correlativas": [
+                  "06",
+                  "08"
+                ]
+              },
+              {
+                "code": "13",
+                "name": "FARMACOLOGÍA",
+                "correlativas": [
+                  "06",
+                  "64"
+                ]
+              },
+              {
+                "code": "14",
+                "name": "PRÁCTICA PRE PROFESIONAL ESPECÍFICA II",
+                "correlativas": [
+                  "10",
+                  "12"
+                ]
+              },
+              {
+                "code": "96",
+                "name": "2do Año",
+                "correlativas": []
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "subjects": [
+              {
+                "code": "06",
+                "name": "CIENCIAS BIOLÓGICAS II",
+                "correlativas": [
+                  "02",
+                  "96"
+                ]
+              },
+              {
+                "code": "07",
+                "name": "EPIDEMIOLOGÍA",
+                "correlativas": [
+                  "80"
+                ]
+              },
+              {
+                "code": "08",
+                "name": "FUNDAMENTOS DEL CUIDADO DE ENFERMERÍA",
+                "correlativas": [
+                  "01",
+                  "48"
+                ]
+              },
+              {
+                "code": "09",
+                "name": "TALLER DE INFORMÁTICA II",
+                "correlativas": [
+                  "04",
+                  "32"
+                ]
+              },
+              {
+                "code": "10",
+                "name": "PRÁCTICA PRE PROFESIONAL ESPECÍFICA I",
+                "correlativas": [
+                  "01",
+                  "08"
+                ]
+              },
+              {
+                "code": "80",
+                "name": "2do Año",
+                "correlativas": []
+              },
+              {
+                "code": "15",
+                "name": "PSICOLOGÍA",
+                "correlativas": [
+                  "80"
+                ]
+              },
+              {
+                "code": "16",
+                "name": "ENFERMERÍA EN SALUD MENTAL",
+                "correlativas": [
+                  "12",
+                  "64"
+                ]
+              },
+              {
+                "code": "17",
+                "name": "ENFERMERÍA MATERNO INFANTIL",
+                "correlativas": [
+                  "12",
+                  "13"
+                ]
+              },
+              {
+                "code": "18",
+                "name": "PRÁCTICA PRE PROFESIONAL ESPECÍFICA III",
+                "correlativas": [
+                  "14",
+                  "16",
+                  "48"
+                ]
+              },
+              {
+                "code": "19",
+                "name": "PRÁCTICA PRE PROFESIONAL ESPECÍFICA IV",
+                "correlativas": [
+                  "14",
+                  "17"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "numero": 3,
+        "cuatris": [
+          {
+            "numero": 1,
+            "subjects": [
+              {
+                "code": "20",
+                "name": "ENFERMERÍA DEL NIÑO Y EL ADOLESCENTE",
+                "correlativas": [
+                  "16",
+                  "17",
+                  "80"
+                ]
+              },
+              {
+                "code": "21",
+                "name": "GESTIÓN DE SERVICIOS DE SALUD",
+                "correlativas": [
+                  "32"
+                ]
+              },
+              {
+                "code": "22",
+                "name": "FILOSOFÍA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "23",
+                "name": "OPTATIVA",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "24",
+                "name": "ENFERMERÍA EN SALUD COLECTIVA Y COMUNITARIA I",
+                "correlativas": [
+                  "16",
+                  "17",
+                  "64"
+                ]
+              },
+              {
+                "code": "25",
+                "name": "PRÁCTICA PRE PROFESIONAL ESPECÍFICA V",
+                "correlativas": [
+                  "19",
+                  "20",
+                  "21",
+                  "24"
+                ]
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "subjects": [
+              {
+                "code": "26",
+                "name": "ÉTICA Y DEONTOLOGÍA PROFESIONAL",
+                "correlativas": [
+                  "80"
+                ]
+              },
+              {
+                "code": "27",
+                "name": "INTRODUCCIÓN A LA INVESTIGACIÓN EN ENFERMERÍA",
+                "correlativas": [
+                  "07",
+                  "64"
+                ]
+              },
+              {
+                "code": "28",
+                "name": "ANTROPOLOGÍA",
+                "correlativas": [
+                  "80"
+                ]
+              },
+              {
+                "code": "29",
+                "name": "OPTATIVA",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "30",
+                "name": "PRÁCTICA INTEGRADA I",
+                "correlativas": [
+                  "01",
+                  "02",
+                  "03",
+                  "04",
+                  "05",
+                  "06",
+                  "07",
+                  "08",
+                  "09",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19",
+                  "20",
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26",
+                  "27",
+                  "28",
+                  "29"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "numero": 4,
+        "cuatris": [
+          {
+            "numero": 1,
+            "subjects": [
+              {
+                "code": "31",
+                "name": "SOCIOLOGÍA",
+                "correlativas": [
+                  "03",
+                  "48"
+                ]
+              },
+              {
+                "code": "32",
+                "name": "EDUCACIÓN EN ENFERMERÍA",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "33",
+                "name": "EPISTEMOLOGÍA DEL CUIDADO",
+                "correlativas": [
+                  "22",
+                  "80"
+                ]
+              },
+              {
+                "code": "34",
+                "name": "ENFERMERÍA EN SALUD COLECTIVA Y COMUNITARIA II",
+                "correlativas": [
+                  "24"
+                ]
+              },
+              {
+                "code": "48",
+                "name": "4to Año",
+                "correlativas": []
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "subjects": [
+              {
+                "code": "35",
+                "name": "ENFERMERÍA EN CUIDADOS CRÍTICOS PEDIÁTRICOS",
+                "correlativas": [
+                  "20",
+                  "64"
+                ]
+              },
+              {
+                "code": "36",
+                "name": "ENFERMERÍA EN CUIDADOS CRÍTICOS ADULTOS",
+                "correlativas": [
+                  "16",
+                  "80"
+                ]
+              },
+              {
+                "code": "37",
+                "name": "SOCIOLOGÍA APLICADA",
+                "correlativas": [
+                  "31",
+                  "48"
+                ]
+              },
+              {
+                "code": "38",
+                "name": "METODOLOGÍA DE LA INVESTIGACIÓN",
+                "correlativas": [
+                  "27",
+                  "64"
+                ]
+              },
+              {
+                "code": "39",
+                "name": "PRÁCTICA PRE PROFESIONAL ESPECÍFICA VI",
+                "correlativas": [
+                  "30",
+                  "32",
+                  "35",
+                  "36",
+                  "38"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "numero": 5,
+        "cuatris": [
+          {
+            "numero": 1,
+            "subjects": [
+              {
+                "code": "40",
+                "name": "TALLER DE TRABAJO FINAL I",
+                "correlativas": [
+                  "38",
+                  "96"
+                ]
+              },
+              {
+                "code": "41",
+                "name": "GESTIÓN DE SERVICIOS DE ENFERMERÍA COMUNITARIA",
+                "correlativas": [
+                  "21",
+                  "34",
+                  "80"
+                ]
+              },
+              {
+                "code": "42",
+                "name": "ENFERMERÍA EN SALUD COLECTIVA Y COMUNITARIA III",
+                "correlativas": [
+                  "34",
+                  "48"
+                ]
+              },
+              {
+                "code": "43",
+                "name": "PRÁCTICA PRE PROFESIONAL ESPECÍFICA VII",
+                "correlativas": [
+                  "39",
+                  "40",
+                  "41",
+                  "42"
+                ]
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "subjects": [
+              {
+                "code": "44",
+                "name": "TALLER DE TRABAJO FINAL II",
+                "correlativas": [
+                  "40",
+                  "64"
+                ]
+              },
+              {
+                "code": "45",
+                "name": "BIOÉTICA Y DESARROLLO PROFESIONAL",
+                "correlativas": [
+                  "26",
+                  "96"
+                ]
+              },
+              {
+                "code": "46",
+                "name": "GESTIÓN DE SERVICIOS DE ENFERMERÍA HOSPITALARIOS",
+                "correlativas": [
+                  "41",
+                  "64"
+                ]
+              },
+              {
+                "code": "47",
+                "name": "PRÁCTICA INTEGRADA II",
+                "correlativas": [
+                  "01",
+                  "02",
+                  "03",
+                  "04",
+                  "05",
+                  "06",
+                  "07",
+                  "08",
+                  "09",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19",
+                  "20",
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26",
+                  "27",
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33",
+                  "34",
+                  "35",
+                  "36",
+                  "37",
+                  "38",
+                  "39",
+                  "40",
+                  "41",
+                  "42",
+                  "43",
+                  "44",
+                  "45",
+                  "46"
+                ]
+              },
+              {
+                "code": "48",
+                "name": "TRABAJO FINAL",
+                "correlativas": [
+                  "01",
+                  "02",
+                  "03",
+                  "04",
+                  "05",
+                  "06",
+                  "07",
+                  "08",
+                  "09",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19",
+                  "20",
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26",
+                  "27",
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33",
+                  "34",
+                  "35",
+                  "36",
+                  "37",
+                  "38",
+                  "39",
+                  "40",
+                  "41",
+                  "42",
+                  "43",
+                  "44",
+                  "45",
+                  "46",
+                  "47"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nombre": "LICENCIATURA EN ENFERMERÍA",
+    "anios": [
+      {
+        "numero": 1,
+        "cuatris": [
+          {
+            "numero": 1,
+            "subjects": [
+              {
+                "code": "01",
+                "name": "INTRODUCCIÓN A LA ENFERMERÍA",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "02",
+                "name": "CIENCIAS BIOLÓGICAS I",
+                "correlativas": [
+                  "80"
+                ]
+              },
+              {
+                "code": "03",
+                "name": "SOCIEDAD, ESTADO Y SALUD",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "04",
+                "name": "TALLER DE INFORMÁTICA I",
+                "correlativas": [
+                  "32"
+                ]
+              },
+              {
+                "code": "05",
+                "name": "TALLER DE COMUNICACIÓN ORAL Y ESCRITA",
+                "correlativas": []
+              },
+              {
+                "code": "32",
+                "name": "1er Año",
+                "correlativas": []
+              },
+              {
+                "code": "11",
+                "name": "NUTRICIÓN Y DIETOTERAPIA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "12",
+                "name": "ENFERMERÍA DEL ADULTO Y DEL ANCIANO",
+                "correlativas": [
+                  "06",
+                  "08"
+                ]
+              },
+              {
+                "code": "13",
+                "name": "FARMACOLOGÍA",
+                "correlativas": [
+                  "06",
+                  "64"
+                ]
+              },
+              {
+                "code": "14",
+                "name": "PRÁCTICA PRE PROFESIONAL ESPECÍFICA II",
+                "correlativas": [
+                  "10",
+                  "12"
+                ]
+              },
+              {
+                "code": "96",
+                "name": "2do Año",
+                "correlativas": []
+              },
+              {
+                "code": "01",
+                "name": "INTRODUCCIÓN AL ANÁLISIS POLÍTICO Y GOBERNANZA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "02",
+                "name": "HISTORIA POLÍTICA DE LA ARGENTINA PREMODERNA",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "03",
+                "name": "DESAFÍOS SOCIOPOLÍTICOS ACTUALES",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "04",
+                "name": "INGLÉS I",
+                "correlativas": [
+                  "32"
+                ]
+              },
+              {
+                "code": "05",
+                "name": "ANÁLISIS DE DISCURSO Y ESTRATEGIAS DE LIDERAZGO",
+                "correlativas": []
+              },
+              {
+                "code": "48",
+                "name": "1er Año",
+                "correlativas": []
+              },
+              {
+                "code": "11",
+                "name": "HISTORIA MODERNA DE OCCIDENTE",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "12",
+                "name": "CIENCIA Y SOCIEDAD",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "13",
+                "name": "TEORÍA POLÍTICA Y SOCIAL ANTIGUA Y MODERNA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "14",
+                "name": "ESTRUCTURAS POLÍTICAS SUBNACIONALES",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "15",
+                "name": "TALLER DE INFORMÁTICA APLICADA",
+                "correlativas": []
+              },
+              {
+                "code": "32",
+                "name": "2do Año",
+                "correlativas": []
+              },
+              {
+                "code": "21",
+                "name": "DERECHO CONSTITUCIONAL, REPRESENTACIÓN POLÍTICA Y ÓRGANOS DE GOBIERNO",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "22",
+                "name": "OBSERVATORIO DE SISTEMAS POLÍTICOS",
+                "correlativas": [
+                  "01",
+                  "48"
+                ]
+              },
+              {
+                "code": "23",
+                "name": "GOBIERNO TRANSPARENTE Y PARTICIPATIVO EN LA ERA DIGITAL",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "24",
+                "name": "HISTORIA DE LAS RELACIONES INTERNACIONALES",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "25",
+                "name": "SEGURIDAD PÚBLICA Y CIUDADANA",
+                "correlativas": []
+              },
+              {
+                "code": "48",
+                "name": "3er Año",
+                "correlativas": []
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "subjects": [
+              {
+                "code": "06",
+                "name": "CIENCIAS BIOLÓGICAS II",
+                "correlativas": [
+                  "02",
+                  "96"
+                ]
+              },
+              {
+                "code": "07",
+                "name": "EPIDEMIOLOGÍA",
+                "correlativas": [
+                  "80"
+                ]
+              },
+              {
+                "code": "08",
+                "name": "FUNDAMENTOS DEL CUIDADO DE ENFERMERÍA",
+                "correlativas": [
+                  "01",
+                  "48"
+                ]
+              },
+              {
+                "code": "09",
+                "name": "TALLER DE INFORMÁTICA II",
+                "correlativas": [
+                  "04",
+                  "32"
+                ]
+              },
+              {
+                "code": "10",
+                "name": "PRÁCTICA PRE PROFESIONAL ESPECÍFICA I",
+                "correlativas": [
+                  "01",
+                  "08"
+                ]
+              },
+              {
+                "code": "80",
+                "name": "2do Año",
+                "correlativas": []
+              },
+              {
+                "code": "15",
+                "name": "PSICOLOGÍA",
+                "correlativas": [
+                  "80"
+                ]
+              },
+              {
+                "code": "16",
+                "name": "ENFERMERÍA EN SALUD MENTAL",
+                "correlativas": [
+                  "12",
+                  "64"
+                ]
+              },
+              {
+                "code": "17",
+                "name": "ENFERMERÍA MATERNO INFANTIL",
+                "correlativas": [
+                  "12",
+                  "13"
+                ]
+              },
+              {
+                "code": "18",
+                "name": "PRÁCTICA PRE PROFESIONAL ESPECÍFICA III",
+                "correlativas": [
+                  "14",
+                  "16",
+                  "48"
+                ]
+              },
+              {
+                "code": "19",
+                "name": "PRÁCTICA PRE PROFESIONAL ESPECÍFICA IV",
+                "correlativas": [
+                  "14",
+                  "17"
+                ]
+              },
+              {
+                "code": "06",
+                "name": "ANÁLISIS DE LAS RELACIONES INTERNACIONALES",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "07",
+                "name": "GEOGRAFÍA POLÍTICA Y ECONÓMICA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "08",
+                "name": "ELEMENTOS DE ECONOMÍA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "09",
+                "name": "INGLÉS II",
+                "correlativas": [
+                  "04",
+                  "32"
+                ]
+              },
+              {
+                "code": "10",
+                "name": "HISTORIA POLÍTICA DE LA ARGENTINA MODERNA",
+                "correlativas": []
+              },
+              {
+                "code": "48",
+                "name": "2do Año",
+                "correlativas": []
+              },
+              {
+                "code": "16",
+                "name": "HISTORIA CONTEMPORÁNEA DE OCCIDENTE",
+                "correlativas": [
+                  "11",
+                  "48"
+                ]
+              },
+              {
+                "code": "17",
+                "name": "SOCIOLOGÍA POLÍTICA",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "18",
+                "name": "PROYECTOS POLÍTICOS DE AMÉRICA LATINA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "19",
+                "name": "ECONOMÍA INTERNACIONAL: TENDENCIAS Y DESAFÍOS",
+                "correlativas": [
+                  "08",
+                  "48"
+                ]
+              },
+              {
+                "code": "20",
+                "name": "FOCOS DISRUPTIVOS DE LA POLÍTICA INTERNACIONAL",
+                "correlativas": []
+              },
+              {
+                "code": "32",
+                "name": "3er Año",
+                "correlativas": []
+              },
+              {
+                "code": "26",
+                "name": "ÉTICA PROFESIONAL Y TRANSPARENCIA PÚBLICA",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "27",
+                "name": "NEGOCIACIÓN, RESOLUCIÓN DE CONFLICTOS Y TOMA DE DECISIONES",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "28",
+                "name": "TEORÍA POLÍTICA Y SOCIAL CONTEMPORÁNEA",
+                "correlativas": [
+                  "13",
+                  "48"
+                ]
+              },
+              {
+                "code": "29",
+                "name": "LABORATORIO DE ANÁLISIS Y PROYECCIÓN DE DATOS",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "30",
+                "name": "SEMINARIO-TALLER DE INTEGRACIÓN",
+                "correlativas": [
+                  "01",
+                  "20"
+                ]
+              },
+              {
+                "code": "48",
+                "name": "Título: ANALISTA UNIVERSITARIO EN POLÍTICA LOCAL, INTERNACIONAL Y",
+                "correlativas": [
+                  "GOBERNANZA"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "numero": 3,
+        "cuatris": [
+          {
+            "numero": 1,
+            "subjects": [
+              {
+                "code": "20",
+                "name": "ENFERMERÍA DEL NIÑO Y EL ADOLESCENTE",
+                "correlativas": [
+                  "16",
+                  "17",
+                  "80"
+                ]
+              },
+              {
+                "code": "21",
+                "name": "GESTIÓN DE SERVICIOS DE SALUD",
+                "correlativas": [
+                  "32"
+                ]
+              },
+              {
+                "code": "22",
+                "name": "FILOSOFÍA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "23",
+                "name": "OPTATIVA",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "24",
+                "name": "ENFERMERÍA EN SALUD COLECTIVA Y COMUNITARIA I",
+                "correlativas": [
+                  "16",
+                  "17",
+                  "64"
+                ]
+              },
+              {
+                "code": "25",
+                "name": "PRÁCTICA PRE PROFESIONAL ESPECÍFICA V",
+                "correlativas": [
+                  "19",
+                  "20",
+                  "21",
+                  "24"
+                ]
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "subjects": [
+              {
+                "code": "26",
+                "name": "ÉTICA Y DEONTOLOGÍA PROFESIONAL",
+                "correlativas": [
+                  "80"
+                ]
+              },
+              {
+                "code": "27",
+                "name": "INTRODUCCIÓN A LA INVESTIGACIÓN EN ENFERMERÍA",
+                "correlativas": [
+                  "07",
+                  "64"
+                ]
+              },
+              {
+                "code": "28",
+                "name": "ANTROPOLOGÍA",
+                "correlativas": [
+                  "80"
+                ]
+              },
+              {
+                "code": "29",
+                "name": "OPTATIVA",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "30",
+                "name": "PRÁCTICA INTEGRADA I",
+                "correlativas": [
+                  "01",
+                  "02",
+                  "03",
+                  "04",
+                  "05",
+                  "06",
+                  "07",
+                  "08",
+                  "09",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19",
+                  "20",
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26",
+                  "27",
+                  "28",
+                  "29"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "numero": 4,
+        "cuatris": [
+          {
+            "numero": 1,
+            "subjects": [
+              {
+                "code": "31",
+                "name": "SOCIOLOGÍA",
+                "correlativas": [
+                  "03",
+                  "48"
+                ]
+              },
+              {
+                "code": "32",
+                "name": "EDUCACIÓN EN ENFERMERÍA",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "33",
+                "name": "EPISTEMOLOGÍA DEL CUIDADO",
+                "correlativas": [
+                  "22",
+                  "80"
+                ]
+              },
+              {
+                "code": "34",
+                "name": "ENFERMERÍA EN SALUD COLECTIVA Y COMUNITARIA II",
+                "correlativas": [
+                  "24"
+                ]
+              },
+              {
+                "code": "48",
+                "name": "4to Año",
+                "correlativas": []
+              },
+              {
+                "code": "31",
+                "name": "SEMINARIO DE NEGOCIOS INTERNACIONALES",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "32",
+                "name": "TEORÍA DE LAS RELACIONES INTERNACIONALES",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "33",
+                "name": "HERRAMIENTAS DE ANÁLISIS DE LA POLÍTICA EXTERIOR ARGENTINA",
+                "correlativas": [
+                  "24",
+                  "48"
+                ]
+              },
+              {
+                "code": "34",
+                "name": "TALLER DE POLÍTICA INTERNACIONAL CONTEMPORÁNEA",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "35",
+                "name": "TALLER DE TRABAJO FINAL",
+                "correlativas": []
+              },
+              {
+                "code": "48",
+                "name": "4to Año",
+                "correlativas": []
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "subjects": [
+              {
+                "code": "35",
+                "name": "ENFERMERÍA EN CUIDADOS CRÍTICOS PEDIÁTRICOS",
+                "correlativas": [
+                  "20",
+                  "64"
+                ]
+              },
+              {
+                "code": "36",
+                "name": "ENFERMERÍA EN CUIDADOS CRÍTICOS ADULTOS",
+                "correlativas": [
+                  "16",
+                  "80"
+                ]
+              },
+              {
+                "code": "37",
+                "name": "SOCIOLOGÍA APLICADA",
+                "correlativas": [
+                  "31",
+                  "48"
+                ]
+              },
+              {
+                "code": "38",
+                "name": "METODOLOGÍA DE LA INVESTIGACIÓN",
+                "correlativas": [
+                  "27",
+                  "64"
+                ]
+              },
+              {
+                "code": "39",
+                "name": "PRÁCTICA PRE PROFESIONAL ESPECÍFICA VI",
+                "correlativas": [
+                  "30",
+                  "32",
+                  "35",
+                  "36",
+                  "38"
+                ]
+              },
+              {
+                "code": "36",
+                "name": "FORO DE DERECHO INTERNACIONAL PÚBLICO",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "37",
+                "name": "OBSERVATORIO DE SEGURIDAD Y POLÍTICA INTERNACIONAL Y DELITOS",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "38",
+                "name": "SEMINARIO DE INTEGRACIÓN REGIONAL Y GLOBALIZACIÓN",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "39",
+                "name": "PRÁCTICA PRE-PROFESIONAL",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "40",
+                "name": "EXPERIENCIAS FORMATIVAS OBLIGATORIAS DE CARÁCTER ELECTIVAS",
+                "correlativas": []
+              },
+              {
+                "code": "41",
+                "name": "TRABAJO FINAL",
+                "correlativas": [
+                  "01",
+                  "02",
+                  "03",
+                  "04",
+                  "05",
+                  "06",
+                  "07",
+                  "08",
+                  "09",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19",
+                  "20",
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26",
+                  "27",
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33",
+                  "34",
+                  "35",
+                  "36",
+                  "37",
+                  "38",
+                  "39",
+                  "40"
+                ]
+              },
+              {
+                "code": "48",
+                "name": "Título: LICENCIATURA EN RELACIONES INTERNACIONALES",
+                "correlativas": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "numero": 5,
+        "cuatris": [
+          {
+            "numero": 1,
+            "subjects": [
+              {
+                "code": "40",
+                "name": "TALLER DE TRABAJO FINAL I",
+                "correlativas": [
+                  "38",
+                  "96"
+                ]
+              },
+              {
+                "code": "41",
+                "name": "GESTIÓN DE SERVICIOS DE ENFERMERÍA COMUNITARIA",
+                "correlativas": [
+                  "21",
+                  "34",
+                  "80"
+                ]
+              },
+              {
+                "code": "42",
+                "name": "ENFERMERÍA EN SALUD COLECTIVA Y COMUNITARIA III",
+                "correlativas": [
+                  "34",
+                  "48"
+                ]
+              },
+              {
+                "code": "43",
+                "name": "PRÁCTICA PRE PROFESIONAL ESPECÍFICA VII",
+                "correlativas": [
+                  "39",
+                  "40",
+                  "41",
+                  "42"
+                ]
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "subjects": [
+              {
+                "code": "44",
+                "name": "TALLER DE TRABAJO FINAL II",
+                "correlativas": [
+                  "40",
+                  "64"
+                ]
+              },
+              {
+                "code": "45",
+                "name": "BIOÉTICA Y DESARROLLO PROFESIONAL",
+                "correlativas": [
+                  "26",
+                  "96"
+                ]
+              },
+              {
+                "code": "46",
+                "name": "GESTIÓN DE SERVICIOS DE ENFERMERÍA HOSPITALARIOS",
+                "correlativas": [
+                  "41",
+                  "64"
+                ]
+              },
+              {
+                "code": "47",
+                "name": "PRÁCTICA INTEGRADA II",
+                "correlativas": [
+                  "01",
+                  "02",
+                  "03",
+                  "04",
+                  "05",
+                  "06",
+                  "07",
+                  "08",
+                  "09",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19",
+                  "20",
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26",
+                  "27",
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33",
+                  "34",
+                  "35",
+                  "36",
+                  "37",
+                  "38",
+                  "39",
+                  "40",
+                  "41",
+                  "42",
+                  "43",
+                  "44",
+                  "45",
+                  "46"
+                ]
+              },
+              {
+                "code": "48",
+                "name": "TRABAJO FINAL",
+                "correlativas": [
+                  "01",
+                  "02",
+                  "03",
+                  "04",
+                  "05",
+                  "06",
+                  "07",
+                  "08",
+                  "09",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19",
+                  "20",
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26",
+                  "27",
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33",
+                  "34",
+                  "35",
+                  "36",
+                  "37",
+                  "38",
+                  "39",
+                  "40",
+                  "41",
+                  "42",
+                  "43",
+                  "44",
+                  "45",
+                  "46",
+                  "47"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nombre": "CONTADOR PÚBLICO",
+    "anios": [
+      {
+        "numero": 1,
+        "cuatris": [
+          {
+            "numero": 1,
+            "subjects": [
+              {
+                "code": "01",
+                "name": "ADMINISTRACIÓN I",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "02",
+                "name": "COMERCIALIZACIÓN",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "03",
+                "name": "CONTABILIDAD I",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "04",
+                "name": "HISTORIA SOCIAL Y ECONÓMICA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "05",
+                "name": "INGLÉS I",
+                "correlativas": []
+              },
+              {
+                "code": "32",
+                "name": "1er Año",
+                "correlativas": []
+              },
+              {
+                "code": "12",
+                "name": "MATEMÁTICA II",
+                "correlativas": [
+                  "08",
+                  "80"
+                ]
+              },
+              {
+                "code": "13",
+                "name": "MICROECONOMÍA",
+                "correlativas": [
+                  "07",
+                  "64"
+                ]
+              },
+              {
+                "code": "14",
+                "name": "CONTABILIDAD II",
+                "correlativas": [
+                  "03",
+                  "64"
+                ]
+              },
+              {
+                "code": "15",
+                "name": "TEORÍA DE LAS ORGANIZACIONES",
+                "correlativas": [
+                  "01",
+                  "64"
+                ]
+              },
+              {
+                "code": "16",
+                "name": "DERECHO CONSTITUCIONAL Y ADMINISTRATIVO",
+                "correlativas": []
+              },
+              {
+                "code": "64",
+                "name": "2do Año",
+                "correlativas": []
+              },
+              {
+                "code": "22",
+                "name": "MATEMÁTICA FINANCIERA",
+                "correlativas": [
+                  "12",
+                  "80"
+                ]
+              },
+              {
+                "code": "23",
+                "name": "DERECHO CIVIL Y COMERCIAL",
+                "correlativas": [
+                  "16",
+                  "64"
+                ]
+              },
+              {
+                "code": "24",
+                "name": "ESTADÍSTICA",
+                "correlativas": [
+                  "12",
+                  "80"
+                ]
+              },
+              {
+                "code": "25",
+                "name": "COSTOS I",
+                "correlativas": [
+                  "13",
+                  "14",
+                  "64"
+                ]
+              },
+              {
+                "code": "26",
+                "name": "ESTRUCTURA Y POLÍTICA ECONÓMICA ARGENTINA",
+                "correlativas": []
+              },
+              {
+                "code": "64",
+                "name": "3er Año",
+                "correlativas": []
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "subjects": [
+              {
+                "code": "06",
+                "name": "COMERCIO INTERNACIONAL",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "07",
+                "name": "PRINCIPIOS DE ECONOMÍA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "08",
+                "name": "MATEMÁTICA I",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "09",
+                "name": "ADMINISTRACIÓN II",
+                "correlativas": [
+                  "01",
+                  "64"
+                ]
+              },
+              {
+                "code": "10",
+                "name": "INFORMÁTICA",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "11",
+                "name": "INGLÉS II",
+                "correlativas": [
+                  "05"
+                ]
+              },
+              {
+                "code": "32",
+                "name": "2do Año",
+                "correlativas": []
+              },
+              {
+                "code": "17",
+                "name": "PSICOLOGÍA APLICADA",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "18",
+                "name": "SISTEMAS DE INFORMACIÓN",
+                "correlativas": [
+                  "15",
+                  "64"
+                ]
+              },
+              {
+                "code": "19",
+                "name": "MACROECONOMÍA",
+                "correlativas": [
+                  "07",
+                  "64"
+                ]
+              },
+              {
+                "code": "20",
+                "name": "INFORMÁTICA APLICADA",
+                "correlativas": [
+                  "10",
+                  "48"
+                ]
+              },
+              {
+                "code": "21",
+                "name": "PROBLEMÁTICA DEL MUNDO ACTUAL",
+                "correlativas": [
+                  "04"
+                ]
+              },
+              {
+                "code": "48",
+                "name": "3er Año",
+                "correlativas": []
+              },
+              {
+                "code": "27",
+                "name": "ADMINISTRACIÓN FINANCIERA",
+                "correlativas": [
+                  "22",
+                  "25",
+                  "80"
+                ]
+              },
+              {
+                "code": "28",
+                "name": "SOCIEDADES",
+                "correlativas": [
+                  "23",
+                  "64"
+                ]
+              },
+              {
+                "code": "29",
+                "name": "ANÁLISIS DE ESTADOS CONTABLES",
+                "correlativas": [
+                  "14",
+                  "80"
+                ]
+              },
+              {
+                "code": "30",
+                "name": "SEMINARIO EN ADMINISTRACIÓN CONTABLE: TALLER DE INTEGRACIÓN",
+                "correlativas": [
+                  "18",
+                  "25",
+                  "80"
+                ]
+              },
+              {
+                "code": "31",
+                "name": "COSTOS II",
+                "correlativas": [
+                  "25"
+                ]
+              },
+              {
+                "code": "64",
+                "name": "Título: ANALISTA UNIVERSITARIO ADMINISTRATIVO CONTABLE",
+                "correlativas": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "numero": 4,
+        "cuatris": [
+          {
+            "numero": 1,
+            "subjects": [
+              {
+                "code": "32",
+                "name": "DERECHO LABORAL Y PREVISIONAL",
+                "correlativas": [
+                  "23",
+                  "64"
+                ]
+              },
+              {
+                "code": "33",
+                "name": "EVALUACIÓN DE PROYECTOS",
+                "correlativas": [
+                  "02",
+                  "27",
+                  "64"
+                ]
+              },
+              {
+                "code": "34",
+                "name": "AUDITORÍA",
+                "correlativas": [
+                  "29",
+                  "80"
+                ]
+              },
+              {
+                "code": "35",
+                "name": "FINANZAS PÚBLICAS Y DERECHO TRIBUTARIO",
+                "correlativas": [
+                  "23",
+                  "80"
+                ]
+              },
+              {
+                "code": "36",
+                "name": "METODOLOGÍA DE LA INVESTIGACIÓN",
+                "correlativas": [
+                  "24"
+                ]
+              },
+              {
+                "code": "64",
+                "name": "4to Año",
+                "correlativas": []
+              },
+              {
+                "code": "42",
+                "name": "PRÁCTICA PROFESIONAL IMPOSITIVA",
+                "correlativas": [
+                  "38",
+                  "39",
+                  "80"
+                ]
+              },
+              {
+                "code": "43",
+                "name": "PRÁCTICA PROFESIONAL ADMINISTRATIVO-CONTABLE",
+                "correlativas": [
+                  "27",
+                  "29",
+                  "30",
+                  "64"
+                ]
+              },
+              {
+                "code": "44",
+                "name": "PRÁCTICA PROFESIONAL JURÍDICA-CONTABLE",
+                "correlativas": [
+                  "37",
+                  "64"
+                ]
+              },
+              {
+                "code": "45",
+                "name": "PRÁCTICA PROFESIONAL SUPERVISADA",
+                "correlativas": [
+                  "01",
+                  "02",
+                  "03",
+                  "04",
+                  "05",
+                  "06",
+                  "07",
+                  "08",
+                  "09",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19",
+                  "20",
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26",
+                  "27",
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33",
+                  "34",
+                  "35",
+                  "36"
+                ]
+              },
+              {
+                "code": "46",
+                "name": "TRABAJO FINAL",
+                "correlativas": [
+                  "01",
+                  "02",
+                  "03",
+                  "04",
+                  "05",
+                  "06",
+                  "07",
+                  "08",
+                  "09",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19",
+                  "20",
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26",
+                  "27",
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33",
+                  "34",
+                  "35",
+                  "36",
+                  "37",
+                  "38",
+                  "39",
+                  "40",
+                  "41",
+                  "42",
+                  "43",
+                  "44",
+                  "48"
+                ]
+              },
+              {
+                "code": "47",
+                "name": "EXPERIENCIAS FORMATIVAS OBLIGATORIAS DE CARÁCTER ELECTIVO",
+                "correlativas": []
+              },
+              {
+                "code": "80",
+                "name": "Título: CONTADOR PÚBLICO",
+                "correlativas": []
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "subjects": [
+              {
+                "code": "37",
+                "name": "CONCURSOS Y QUIEBRAS",
+                "correlativas": [
+                  "28",
+                  "32",
+                  "64"
+                ]
+              },
+              {
+                "code": "38",
+                "name": "IMPUESTO A LAS RENTAS Y PATRIMONIO",
+                "correlativas": [
+                  "35",
+                  "80"
+                ]
+              },
+              {
+                "code": "39",
+                "name": "IMPUESTO SOBRE LOS CONSUMOS Y PROCEDIMIENTO TRIBUTARIO",
+                "correlativas": [
+                  "35",
+                  "80"
+                ]
+              },
+              {
+                "code": "40",
+                "name": "TÉCNICAS CUANTITATIVAS",
+                "correlativas": [
+                  "24",
+                  "48"
+                ]
+              },
+              {
+                "code": "41",
+                "name": "TALLER DE TRABAJO FINAL",
+                "correlativas": [
+                  "36"
+                ]
+              },
+              {
+                "code": "48",
+                "name": "5to Año",
+                "correlativas": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nombre": "LICENCIATURA EN ADMINISTRACIÓN",
+    "anios": [
+      {
+        "numero": 1,
+        "cuatris": [
+          {
+            "numero": 1,
+            "subjects": [
+              {
+                "code": "01",
+                "name": "TALLER DE INTRODUCCIÓN A LA ECONOMÍA Y LOS NEGOCIOS",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "02",
+                "name": "FUNDAMENTOS DE MARKETING",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "03",
+                "name": "ADMINISTRACIÓN GENERAL",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "04",
+                "name": "INTRODUCCIÓN AL COMERCIO INTERNACIONAL",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "05",
+                "name": "CONTABILIDAD GENERAL",
+                "correlativas": []
+              },
+              {
+                "code": "80",
+                "name": "1er Año",
+                "correlativas": []
+              },
+              {
+                "code": "11",
+                "name": "PROBLEMÁTICA DEL MUNDO ACTUAL",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "12",
+                "name": "MATEMÁTICA II",
+                "correlativas": [
+                  "08",
+                  "64"
+                ]
+              },
+              {
+                "code": "13",
+                "name": "INGLÉS I",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "14",
+                "name": "MARCO LEGAL DE LA EMPRESA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "15",
+                "name": "PSICOSOCIOLOGÍA DE LA ORGANIZACIÓN",
+                "correlativas": []
+              },
+              {
+                "code": "64",
+                "name": "2do Año",
+                "correlativas": []
+              },
+              {
+                "code": "22",
+                "name": "MICROECONOMÍA",
+                "correlativas": [
+                  "06",
+                  "64"
+                ]
+              },
+              {
+                "code": "23",
+                "name": "TÉCNICAS DE VALUACIÓN CONTABLE",
+                "correlativas": [
+                  "05",
+                  "80"
+                ]
+              },
+              {
+                "code": "24",
+                "name": "TEORÍA DE LA ORGANIZACIÓN",
+                "correlativas": [
+                  "03",
+                  "64"
+                ]
+              },
+              {
+                "code": "25",
+                "name": "MATEMÁTICA FINANCIERA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "26",
+                "name": "GESTIÓN DEL CAPITAL HUMANO",
+                "correlativas": [
+                  "15"
+                ]
+              },
+              {
+                "code": "64",
+                "name": "3er Año",
+                "correlativas": []
+              },
+              {
+                "code": "32",
+                "name": "ADMINISTRACIÓN FINANCIERA",
+                "correlativas": [
+                  "80"
+                ]
+              },
+              {
+                "code": "33",
+                "name": "ANÁLISIS DE ESTADOS CONTABLES",
+                "correlativas": [
+                  "23",
+                  "64"
+                ]
+              },
+              {
+                "code": "34",
+                "name": "POLÍTICA DE NEGOCIOS",
+                "correlativas": [
+                  "09",
+                  "64"
+                ]
+              },
+              {
+                "code": "35",
+                "name": "TÉCNICAS CUANTITATIVAS",
+                "correlativas": [
+                  "17",
+                  "64"
+                ]
+              },
+              {
+                "code": "36",
+                "name": "TALLER DE TRABAJO FINAL",
+                "correlativas": [
+                  "19"
+                ]
+              },
+              {
+                "code": "64",
+                "name": "4to Año",
+                "correlativas": []
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "subjects": [
+              {
+                "code": "06",
+                "name": "PRINCIPIOS DE ECONOMÍA",
+                "correlativas": [
+                  "80"
+                ]
+              },
+              {
+                "code": "07",
+                "name": "HISTORIA ECONÓMICA Y SOCIAL",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "08",
+                "name": "MATEMÁTICA I",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "09",
+                "name": "ADMINISTRACIÓN ESTRATÉGICA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "10",
+                "name": "INFORMÁTICA APLICADA",
+                "correlativas": []
+              },
+              {
+                "code": "80",
+                "name": "2do Año",
+                "correlativas": []
+              },
+              {
+                "code": "16",
+                "name": "NEGOCIOS DIGITALES",
+                "correlativas": [
+                  "09",
+                  "64"
+                ]
+              },
+              {
+                "code": "17",
+                "name": "ESTADÍSTICA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "18",
+                "name": "INGLÉS II",
+                "correlativas": [
+                  "13",
+                  "64"
+                ]
+              },
+              {
+                "code": "19",
+                "name": "METODOLOGÍA DE LA INVESTIGACIÓN",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "20",
+                "name": "COMPETENCIAS GERENCIALES",
+                "correlativas": [
+                  "03",
+                  "15",
+                  "64"
+                ]
+              },
+              {
+                "code": "21",
+                "name": "TALLER DE INTEGRACIÓN",
+                "correlativas": []
+              },
+              {
+                "code": "32",
+                "name": "3er Año",
+                "correlativas": []
+              },
+              {
+                "code": "27",
+                "name": "SISTEMAS DE INFORMACIÓN",
+                "correlativas": [
+                  "03",
+                  "64"
+                ]
+              },
+              {
+                "code": "28",
+                "name": "MACROECONOMÍA",
+                "correlativas": [
+                  "06",
+                  "64"
+                ]
+              },
+              {
+                "code": "29",
+                "name": "COSTOS",
+                "correlativas": [
+                  "05",
+                  "64"
+                ]
+              },
+              {
+                "code": "30",
+                "name": "GESTIÓN DE LA PRODUCCIÓN",
+                "correlativas": [
+                  "03",
+                  "64"
+                ]
+              },
+              {
+                "code": "31",
+                "name": "SEMINARIO DE INTEGRACIÓN",
+                "correlativas": [
+                  "01",
+                  "02",
+                  "03",
+                  "04",
+                  "05",
+                  "06",
+                  "07",
+                  "08",
+                  "09",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19",
+                  "20",
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26"
+                ]
+              },
+              {
+                "code": "64",
+                "name": "4to Año",
+                "correlativas": []
+              },
+              {
+                "code": "37",
+                "name": "DERECHO LABORAL",
+                "correlativas": [
+                  "14",
+                  "64"
+                ]
+              },
+              {
+                "code": "38",
+                "name": "PLANEAMIENTO Y EVALUACIÓN DE PROYECTOS",
+                "correlativas": [
+                  "32",
+                  "34",
+                  "64"
+                ]
+              },
+              {
+                "code": "39",
+                "name": "DIRECCIÓN GENERAL",
+                "correlativas": [
+                  "20",
+                  "34",
+                  "64"
+                ]
+              },
+              {
+                "code": "40",
+                "name": "SEMINARIO DE PRÁCTICA PROFESIONAL",
+                "correlativas": [
+                  "31",
+                  "64"
+                ]
+              },
+              {
+                "code": "41",
+                "name": "TRABAJO FINAL",
+                "correlativas": [
+                  "36",
+                  "64"
+                ]
+              },
+              {
+                "code": "42",
+                "name": "EXPERIENCIAS FORMATIVAS OBLIGATORIAS DE CARÁCTER ELECTIVO",
+                "correlativas": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nombre": "LICENCIATURA EN COMERCIO INTERNACIONAL",
+    "anios": [
+      {
+        "numero": 1,
+        "cuatris": [
+          {
+            "numero": 1,
+            "subjects": [
+              {
+                "code": "01",
+                "name": "TALLER DE INTRODUCCIÓN A LA ECONOMÍA Y LOS NEGOCIOS",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "02",
+                "name": "FUNDAMENTOS DE MARKETING",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "03",
+                "name": "ADMINISTRACIÓN GENERAL",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "04",
+                "name": "INTRODUCCIÓN AL COMERCIO INTERNACIONAL",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "05",
+                "name": "CONTABILIDAD GENERAL",
+                "correlativas": []
+              },
+              {
+                "code": "80",
+                "name": "1er Año",
+                "correlativas": []
+              },
+              {
+                "code": "11",
+                "name": "PROBLEMÁTICA DEL MUNDO ACTUAL",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "12",
+                "name": "MATEMÁTICA II",
+                "correlativas": [
+                  "08",
+                  "64"
+                ]
+              },
+              {
+                "code": "13",
+                "name": "INGLÉS I",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "14",
+                "name": "MARCO LEGAL DE LA EMPRESA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "15",
+                "name": "PSICOSOCIOLOGÍA DE LA ORGANIZACIÓN",
+                "correlativas": []
+              },
+              {
+                "code": "64",
+                "name": "2do Año",
+                "correlativas": []
+              },
+              {
+                "code": "22",
+                "name": "LEGISLACIÓN ADUANERA I",
+                "correlativas": [
+                  "04",
+                  "80"
+                ]
+              },
+              {
+                "code": "23",
+                "name": "INTEGRACIÓN Y COOPERACIÓN",
+                "correlativas": [
+                  "04",
+                  "64"
+                ]
+              },
+              {
+                "code": "24",
+                "name": "LOGÍSTICA INTERNACIONAL",
+                "correlativas": [
+                  "04",
+                  "64"
+                ]
+              },
+              {
+                "code": "25",
+                "name": "ECONOMÍA MUNDIAL",
+                "correlativas": [
+                  "06",
+                  "64"
+                ]
+              },
+              {
+                "code": "26",
+                "name": "INGLÉS III",
+                "correlativas": [
+                  "18"
+                ]
+              },
+              {
+                "code": "64",
+                "name": "3er Año",
+                "correlativas": []
+              },
+              {
+                "code": "32",
+                "name": "ADMINISTRACIÓN FINANCIERA",
+                "correlativas": [
+                  "80"
+                ]
+              },
+              {
+                "code": "33",
+                "name": "DERECHO APLICADO AL COMERCIO INTERNACIONAL",
+                "correlativas": [
+                  "14",
+                  "64"
+                ]
+              },
+              {
+                "code": "34",
+                "name": "POLÍTICA DE NEGOCIOS",
+                "correlativas": [
+                  "09",
+                  "64"
+                ]
+              },
+              {
+                "code": "35",
+                "name": "TÉCNICAS CUANTITATIVAS",
+                "correlativas": [
+                  "17",
+                  "64"
+                ]
+              },
+              {
+                "code": "36",
+                "name": "TALLER DE TRABAJO FINAL",
+                "correlativas": [
+                  "19"
+                ]
+              },
+              {
+                "code": "64",
+                "name": "4to Año",
+                "correlativas": []
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "subjects": [
+              {
+                "code": "06",
+                "name": "PRINCIPIOS DE ECONOMÍA",
+                "correlativas": [
+                  "80"
+                ]
+              },
+              {
+                "code": "07",
+                "name": "HISTORIA ECONÓMICA Y SOCIAL",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "08",
+                "name": "MATEMÁTICA I",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "09",
+                "name": "ADMINISTRACIÓN ESTRATÉGICA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "10",
+                "name": "INFORMÁTICA APLICADA",
+                "correlativas": []
+              },
+              {
+                "code": "80",
+                "name": "2do Año",
+                "correlativas": []
+              },
+              {
+                "code": "16",
+                "name": "NEGOCIOS DIGITALES",
+                "correlativas": [
+                  "09",
+                  "64"
+                ]
+              },
+              {
+                "code": "17",
+                "name": "ESTADÍSTICA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "18",
+                "name": "INGLÉS II",
+                "correlativas": [
+                  "13",
+                  "64"
+                ]
+              },
+              {
+                "code": "19",
+                "name": "METODOLOGÍA DE LA INVESTIGACIÓN",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "20",
+                "name": "COMPETENCIAS GERENCIALES",
+                "correlativas": [
+                  "03",
+                  "15",
+                  "64"
+                ]
+              },
+              {
+                "code": "21",
+                "name": "TALLER DE INTEGRACIÓN",
+                "correlativas": []
+              },
+              {
+                "code": "32",
+                "name": "3er Año",
+                "correlativas": []
+              },
+              {
+                "code": "27",
+                "name": "LEGISLACIÓN ADUANERA II",
+                "correlativas": [
+                  "22",
+                  "64"
+                ]
+              },
+              {
+                "code": "28",
+                "name": "CLASIFICACIÓN ARANCELARIA",
+                "correlativas": [
+                  "04",
+                  "64"
+                ]
+              },
+              {
+                "code": "29",
+                "name": "VALORACIÓN",
+                "correlativas": [
+                  "04",
+                  "64"
+                ]
+              },
+              {
+                "code": "30",
+                "name": "COSTOS Y PRECIOS",
+                "correlativas": [
+                  "04",
+                  "05",
+                  "64"
+                ]
+              },
+              {
+                "code": "31",
+                "name": "SEMINARIO DE INTEGRACIÓN",
+                "correlativas": [
+                  "01",
+                  "02",
+                  "03",
+                  "04",
+                  "05",
+                  "06",
+                  "07",
+                  "08",
+                  "09",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19",
+                  "20",
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26"
+                ]
+              },
+              {
+                "code": "64",
+                "name": "4to Año",
+                "correlativas": []
+              },
+              {
+                "code": "37",
+                "name": "RÉGIMEN ECONÓMICO FINANCIERO DEL COMERCIO INTERNACIONAL",
+                "correlativas": [
+                  "04",
+                  "32",
+                  "64"
+                ]
+              },
+              {
+                "code": "38",
+                "name": "PLANEAMIENTO Y EVALUACIÓN DE PROYECTOS",
+                "correlativas": [
+                  "32",
+                  "34",
+                  "64"
+                ]
+              },
+              {
+                "code": "39",
+                "name": "DIRECCIÓN ESTRATÉGICA DE NEGOCIOS INTERNACIONALES",
+                "correlativas": [
+                  "20",
+                  "34",
+                  "64"
+                ]
+              },
+              {
+                "code": "40",
+                "name": "SEMINARIO DE PRÁCTICA PROFESIONAL",
+                "correlativas": [
+                  "31",
+                  "64"
+                ]
+              },
+              {
+                "code": "41",
+                "name": "TRABAJO FINAL",
+                "correlativas": [
+                  "36",
+                  "64"
+                ]
+              },
+              {
+                "code": "42",
+                "name": "EXPERIENCIAS FORMATIVAS OBLIGATORIAS DE CARÁCTER ELECTIVO",
+                "correlativas": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nombre": "LICENCIATURA EN ECONOMÍA",
+    "anios": [
+      {
+        "numero": 1,
+        "cuatris": [
+          {
+            "numero": 1,
+            "subjects": [
+              {
+                "code": "01",
+                "name": "ADMINISTRACIÓN I",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "02",
+                "name": "PENSAMIENTO ECONÓMICO",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "03",
+                "name": "CONTABILIDAD",
+                "correlativas": [
+                  "96"
+                ]
+              },
+              {
+                "code": "04",
+                "name": "HISTORIA SOCIAL Y ECONÓMICA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "05",
+                "name": "INGLÉS I",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "06",
+                "name": "INFORMÁTICA",
+                "correlativas": []
+              },
+              {
+                "code": "48",
+                "name": "1er Año",
+                "correlativas": []
+              },
+              {
+                "code": "13",
+                "name": "MATEMÁTICA II",
+                "correlativas": [
+                  "09",
+                  "96"
+                ]
+              },
+              {
+                "code": "14",
+                "name": "MICROECONOMÍA I",
+                "correlativas": [
+                  "08",
+                  "64"
+                ]
+              },
+              {
+                "code": "15",
+                "name": "INTEGRACIÓN Y COOPERACIÓN",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "16",
+                "name": "DERECHO CIVIL Y COMERCIAL",
+                "correlativas": [
+                  "07",
+                  "64"
+                ]
+              },
+              {
+                "code": "17",
+                "name": "INGLÉS III",
+                "correlativas": [
+                  "11"
+                ]
+              },
+              {
+                "code": "48",
+                "name": "2do Año",
+                "correlativas": []
+              },
+              {
+                "code": "23",
+                "name": "MATEMÁTICA FINANCIERA",
+                "correlativas": [
+                  "13",
+                  "64"
+                ]
+              },
+              {
+                "code": "24",
+                "name": "ORGANIZACIÓN INDUSTRIAL",
+                "correlativas": [
+                  "18",
+                  "64"
+                ]
+              },
+              {
+                "code": "25",
+                "name": "ESTADÍSTICA",
+                "correlativas": [
+                  "13",
+                  "96"
+                ]
+              },
+              {
+                "code": "26",
+                "name": "CUENTAS NACIONALES",
+                "correlativas": [
+                  "21",
+                  "80"
+                ]
+              },
+              {
+                "code": "27",
+                "name": "ECONOMÍA DEL SECTOR PÚBLICO",
+                "correlativas": [
+                  "07",
+                  "21"
+                ]
+              },
+              {
+                "code": "80",
+                "name": "3er Año",
+                "correlativas": []
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "subjects": [
+              {
+                "code": "07",
+                "name": "DERECHO CONSTITUCIONAL Y ADMINISTRATIVO",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "08",
+                "name": "PRINCIPIOS DE ECONOMÍA",
+                "correlativas": [
+                  "96"
+                ]
+              },
+              {
+                "code": "09",
+                "name": "MATEMÁTICA I",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "10",
+                "name": "ADMINISTRACIÓN II",
+                "correlativas": [
+                  "01",
+                  "64"
+                ]
+              },
+              {
+                "code": "11",
+                "name": "INGLÉS II",
+                "correlativas": [
+                  "05",
+                  "48"
+                ]
+              },
+              {
+                "code": "12",
+                "name": "INFORMÁTICA II",
+                "correlativas": [
+                  "06"
+                ]
+              },
+              {
+                "code": "48",
+                "name": "2do Año",
+                "correlativas": []
+              },
+              {
+                "code": "18",
+                "name": "MICROECONOMÍA II",
+                "correlativas": [
+                  "13",
+                  "14",
+                  "80"
+                ]
+              },
+              {
+                "code": "19",
+                "name": "MATEMÁTICA III",
+                "correlativas": [
+                  "13",
+                  "80"
+                ]
+              },
+              {
+                "code": "20",
+                "name": "PROBLEMÁTICA DEL MUNDO ACTUAL",
+                "correlativas": [
+                  "04",
+                  "64"
+                ]
+              },
+              {
+                "code": "21",
+                "name": "MACROECONOMÍA",
+                "correlativas": [
+                  "08",
+                  "96"
+                ]
+              },
+              {
+                "code": "22",
+                "name": "ÉTICA Y DEONTOLOGÍA PROFESIONAL",
+                "correlativas": []
+              },
+              {
+                "code": "48",
+                "name": "3er Año",
+                "correlativas": []
+              },
+              {
+                "code": "28",
+                "name": "ADMINISTRACIÓN FINANCIERA",
+                "correlativas": [
+                  "23",
+                  "96"
+                ]
+              },
+              {
+                "code": "29",
+                "name": "METODOLOGÍA DE LA INVESTIGACIÓN",
+                "correlativas": [
+                  "25",
+                  "64"
+                ]
+              },
+              {
+                "code": "30",
+                "name": "ECONOMETRÍA",
+                "correlativas": [
+                  "19",
+                  "25",
+                  "80"
+                ]
+              },
+              {
+                "code": "31",
+                "name": "SISTEMAS BANCARIOS Y CREDITICIOS",
+                "correlativas": [
+                  "14",
+                  "21",
+                  "64"
+                ]
+              },
+              {
+                "code": "32",
+                "name": "ECONOMÍAS REGIONALES",
+                "correlativas": [
+                  "14",
+                  "21",
+                  "48"
+                ]
+              },
+              {
+                "code": "33",
+                "name": "SEMINARIO DE INTEGRACIÓN Y PRÁCTICA GERENCIAL",
+                "correlativas": []
+              },
+              {
+                "code": "48",
+                "name": "Título: ANALISTA UNIVERSITARIO EN ECONOMIA DE EMPRESAS",
+                "correlativas": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "numero": 4,
+        "cuatris": [
+          {
+            "numero": 1,
+            "subjects": [
+              {
+                "code": "34",
+                "name": "OPTATIVA I",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "35",
+                "name": "EVALUACIÓN DE PROYECTOS",
+                "correlativas": [
+                  "28",
+                  "64"
+                ]
+              },
+              {
+                "code": "36",
+                "name": "ECONOMÍA DEL COMPORTAMIENTO",
+                "correlativas": [
+                  "18",
+                  "64"
+                ]
+              },
+              {
+                "code": "37",
+                "name": "ECONOMÍA INTERNACIONAL",
+                "correlativas": [
+                  "14",
+                  "21",
+                  "80"
+                ]
+              },
+              {
+                "code": "38",
+                "name": "MERCADO DE CAPITALES",
+                "correlativas": [
+                  "28"
+                ]
+              },
+              {
+                "code": "64",
+                "name": "4to Año",
+                "correlativas": []
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "subjects": [
+              {
+                "code": "39",
+                "name": "POLÍTICAS PÚBLICAS",
+                "correlativas": [
+                  "07",
+                  "27",
+                  "64"
+                ]
+              },
+              {
+                "code": "40",
+                "name": "DESARROLLO SOSTENIBLE Y NUEVAS TECNOLOGÍAS",
+                "correlativas": [
+                  "18",
+                  "21",
+                  "80"
+                ]
+              },
+              {
+                "code": "41",
+                "name": "OPTATIVA II",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "42",
+                "name": "SEMINARIO DE PRÁCTICA PROFESIONAL",
+                "correlativas": [
+                  "33",
+                  "64"
+                ]
+              },
+              {
+                "code": "43",
+                "name": "TALLER DE TRABAJO FINAL",
+                "correlativas": [
+                  "29",
+                  "48"
+                ]
+              },
+              {
+                "code": "44",
+                "name": "TRABAJO FINAL",
+                "correlativas": [
+                  "01",
+                  "02",
+                  "03",
+                  "04",
+                  "05",
+                  "06",
+                  "07",
+                  "08",
+                  "09",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19",
+                  "20",
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26",
+                  "27",
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33",
+                  "34",
+                  "35",
+                  "36",
+                  "37",
+                  "38",
+                  "39",
+                  "40",
+                  "41",
+                  "42",
+                  "43"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nombre": "LICENCIATURA EN COMERCIALIZACIÓN",
+    "anios": [
+      {
+        "numero": 1,
+        "cuatris": [
+          {
+            "numero": 1,
+            "subjects": [
+              {
+                "code": "01",
+                "name": "TALLER DE INTRODUCCIÓN A LA ECONOMÍA Y LOS NEGOCIOS",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "02",
+                "name": "FUNDAMENTOS DE MARKETING",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "03",
+                "name": "ADMINISTRACIÓN GENERAL",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "04",
+                "name": "INTRODUCCIÓN AL COMERCIO INTERNACIONAL",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "05",
+                "name": "CONTABILIDAD GENERAL",
+                "correlativas": []
+              },
+              {
+                "code": "80",
+                "name": "1er Año",
+                "correlativas": []
+              },
+              {
+                "code": "11",
+                "name": "PROBLEMÁTICA DEL MUNDO ACTUAL",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "12",
+                "name": "MATEMÁTICA II",
+                "correlativas": [
+                  "08",
+                  "64"
+                ]
+              },
+              {
+                "code": "13",
+                "name": "INGLÉS I",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "14",
+                "name": "MARCO LEGAL DE LA EMPRESA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "15",
+                "name": "PSICOSOCIOLOGÍA DE LA ORGANIZACIÓN",
+                "correlativas": []
+              },
+              {
+                "code": "64",
+                "name": "2do Año",
+                "correlativas": []
+              },
+              {
+                "code": "22",
+                "name": "COMUNICACIÓN COMERCIAL",
+                "correlativas": [
+                  "02",
+                  "64"
+                ]
+              },
+              {
+                "code": "23",
+                "name": "POLÍTICA DE PRODUCTO",
+                "correlativas": [
+                  "02",
+                  "64"
+                ]
+              },
+              {
+                "code": "24",
+                "name": "CANALES DE DISTRIBUCIÓN",
+                "correlativas": [
+                  "02",
+                  "64"
+                ]
+              },
+              {
+                "code": "25",
+                "name": "COMPORTAMIENTO DEL CONSUMIDOR",
+                "correlativas": [
+                  "15",
+                  "64"
+                ]
+              },
+              {
+                "code": "26",
+                "name": "DIRECCIÓN DE VENTAS",
+                "correlativas": [
+                  "02"
+                ]
+              },
+              {
+                "code": "64",
+                "name": "3er Año",
+                "correlativas": []
+              },
+              {
+                "code": "32",
+                "name": "ADMINISTRACIÓN FINANCIERA",
+                "correlativas": [
+                  "80"
+                ]
+              },
+              {
+                "code": "33",
+                "name": "MERCADOS ESPECIALES I",
+                "correlativas": [
+                  "15",
+                  "64"
+                ]
+              },
+              {
+                "code": "34",
+                "name": "POLÍTICA DE NEGOCIOS",
+                "correlativas": [
+                  "09",
+                  "64"
+                ]
+              },
+              {
+                "code": "35",
+                "name": "TÉCNICAS CUANTITATIVAS",
+                "correlativas": [
+                  "17",
+                  "64"
+                ]
+              },
+              {
+                "code": "36",
+                "name": "TALLER DE TRABAJO FINAL",
+                "correlativas": [
+                  "19"
+                ]
+              },
+              {
+                "code": "64",
+                "name": "4to Año",
+                "correlativas": []
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "subjects": [
+              {
+                "code": "06",
+                "name": "PRINCIPIOS DE ECONOMÍA",
+                "correlativas": [
+                  "80"
+                ]
+              },
+              {
+                "code": "07",
+                "name": "HISTORIA ECONÓMICA Y SOCIAL",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "08",
+                "name": "MATEMÁTICA I",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "09",
+                "name": "ADMINISTRACIÓN ESTRATÉGICA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "10",
+                "name": "INFORMÁTICA APLICADA",
+                "correlativas": []
+              },
+              {
+                "code": "80",
+                "name": "2do Año",
+                "correlativas": []
+              },
+              {
+                "code": "16",
+                "name": "NEGOCIOS DIGITALES",
+                "correlativas": [
+                  "09",
+                  "64"
+                ]
+              },
+              {
+                "code": "17",
+                "name": "ESTADÍSTICA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "18",
+                "name": "INGLÉS II",
+                "correlativas": [
+                  "13",
+                  "64"
+                ]
+              },
+              {
+                "code": "19",
+                "name": "METODOLOGÍA DE LA INVESTIGACIÓN",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "20",
+                "name": "COMPETENCIAS GERENCIALES",
+                "correlativas": [
+                  "03",
+                  "15",
+                  "64"
+                ]
+              },
+              {
+                "code": "21",
+                "name": "TALLER DE INTEGRACIÓN",
+                "correlativas": [
+                  "01",
+                  "02",
+                  "03",
+                  "04",
+                  "05",
+                  "06",
+                  "07",
+                  "08",
+                  "09",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15"
+                ]
+              },
+              {
+                "code": "32",
+                "name": "3er Año",
+                "correlativas": []
+              },
+              {
+                "code": "27",
+                "name": "POLÍTICA DE PRECIOS",
+                "correlativas": [
+                  "02",
+                  "64"
+                ]
+              },
+              {
+                "code": "28",
+                "name": "INVESTIGACIÓN DE MERCADO",
+                "correlativas": [
+                  "15",
+                  "64"
+                ]
+              },
+              {
+                "code": "29",
+                "name": "COSTOS",
+                "correlativas": [
+                  "05",
+                  "64"
+                ]
+              },
+              {
+                "code": "30",
+                "name": "MARKETING DIGITAL",
+                "correlativas": [
+                  "16",
+                  "64"
+                ]
+              },
+              {
+                "code": "31",
+                "name": "SEMINARIO DE INTEGRACIÓN",
+                "correlativas": [
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26"
+                ]
+              },
+              {
+                "code": "64",
+                "name": "4to Año",
+                "correlativas": []
+              },
+              {
+                "code": "37",
+                "name": "MERCADOS ESPECIALES II",
+                "correlativas": [
+                  "15",
+                  "64"
+                ]
+              },
+              {
+                "code": "38",
+                "name": "PLANEAMIENTO Y EVALUACIÓN DE PROYECTOS",
+                "correlativas": [
+                  "32",
+                  "34",
+                  "64"
+                ]
+              },
+              {
+                "code": "39",
+                "name": "DIRECCIÓN ESTRATÉGICA DE MARKETING",
+                "correlativas": [
+                  "20",
+                  "34",
+                  "64"
+                ]
+              },
+              {
+                "code": "40",
+                "name": "SEMINARIO DE PRÁCTICA PROFESIONAL",
+                "correlativas": [
+                  "31",
+                  "64"
+                ]
+              },
+              {
+                "code": "41",
+                "name": "TRABAJO FINAL",
+                "correlativas": [
+                  "36",
+                  "64"
+                ]
+              },
+              {
+                "code": "42",
+                "name": "EXPERIENCIAS FORMATIVAS OBLIGATORIAS DE CARÁCTER ELECTIVO",
+                "correlativas": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nombre": "VIDEOJUEGOS",
+    "anios": [
+      {
+        "numero": 1,
+        "cuatris": [
+          {
+            "numero": 1,
+            "subjects": [
+              {
+                "code": "01",
+                "name": "INTRODUCCIÓN A LOS VIDEOJUEGOS",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "02",
+                "name": "TECNOLOGÍA DEL ENTRETENIMIENTO",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "03",
+                "name": "GUIÓN Y NARRATIVA DE VIDEOJUEGOS",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "04",
+                "name": "PROGRAMACIÓN I",
+                "correlativas": []
+              },
+              {
+                "code": "96",
+                "name": "1er Año",
+                "correlativas": []
+              },
+              {
+                "code": "10",
+                "name": "DISEÑO Y ANIMACIÓN 2D",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "11",
+                "name": "PRODUCCIÓN DE AUDIO Y SONIDO",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "12",
+                "name": "PARADIGMAS DE PROGRAMACIÓN",
+                "correlativas": [
+                  "96"
+                ]
+              },
+              {
+                "code": "13",
+                "name": "MATEMÁTICA APLICADA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "14",
+                "name": "MOTORES GRÁFICOS II",
+                "correlativas": [
+                  "07"
+                ]
+              },
+              {
+                "code": "64",
+                "name": "2do Año",
+                "correlativas": []
+              },
+              {
+                "code": "20",
+                "name": "INTELIGENCIA ARTIFICIAL",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "21",
+                "name": "DISEÑO Y ANIMACIÓN 3D II",
+                "correlativas": [
+                  "15",
+                  "64"
+                ]
+              },
+              {
+                "code": "22",
+                "name": "PROGRAMACIÓN PARA DISPOSITIVOS MÓVILES",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "23",
+                "name": "DIRECCIÓN Y ADMINISTRACIÓN DE PROYECTOS",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "24",
+                "name": "PROYECTO DE INTEGRACIÓN: DESARROLLO E IMPLEMENTACIÓN DE VIDEOJUEGOS",
+                "correlativas": [
+                  "01",
+                  "02",
+                  "03",
+                  "04",
+                  "05",
+                  "06",
+                  "07",
+                  "08",
+                  "09",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19"
+                ]
+              },
+              {
+                "code": "64",
+                "name": "3er Año",
+                "correlativas": []
+              },
+              {
+                "code": "01",
+                "name": "INTRODUCCIÓN AL ANÁLISIS POLÍTICO Y GOBERNANZA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "02",
+                "name": "HISTORIA POLÍTICA DE LA ARGENTINA PREMODERNA",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "03",
+                "name": "DESAFÍOS SOCIOPOLÍTICOS ACTUALES",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "04",
+                "name": "INGLÉS I",
+                "correlativas": [
+                  "32"
+                ]
+              },
+              {
+                "code": "05",
+                "name": "ANÁLISIS DE DISCURSO Y ESTRATEGIAS DE LIDERAZGO",
+                "correlativas": []
+              },
+              {
+                "code": "48",
+                "name": "1er Año",
+                "correlativas": []
+              },
+              {
+                "code": "11",
+                "name": "HISTORIA MODERNA DE OCCIDENTE",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "12",
+                "name": "CIENCIA Y SOCIEDAD",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "13",
+                "name": "TEORÍA POLÍTICA Y SOCIAL ANTIGUA Y MODERNA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "14",
+                "name": "ESTRUCTURAS POLÍTICAS SUBNACIONALES",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "15",
+                "name": "TALLER DE INFORMÁTICA APLICADA",
+                "correlativas": []
+              },
+              {
+                "code": "32",
+                "name": "2do Año",
+                "correlativas": []
+              },
+              {
+                "code": "21",
+                "name": "DERECHO CONSTITUCIONAL, REPRESENTACIÓN POLÍTICA Y ÓRGANOS DE GOBIERNO",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "22",
+                "name": "OBSERVATORIO DE SISTEMAS POLÍTICOS",
+                "correlativas": [
+                  "01",
+                  "48"
+                ]
+              },
+              {
+                "code": "23",
+                "name": "GOBIERNO TRANSPARENTE Y PARTICIPATIVO EN LA ERA DIGITAL",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "24",
+                "name": "HISTORIA DE LAS RELACIONES INTERNACIONALES",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "25",
+                "name": "SEGURIDAD PÚBLICA Y CIUDADANA",
+                "correlativas": []
+              },
+              {
+                "code": "48",
+                "name": "3er Año",
+                "correlativas": []
+              },
+              {
+                "code": "01",
+                "name": "INTRODUCCIÓN AL ANÁLISIS POLÍTICO Y GOBERNANZA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "02",
+                "name": "HISTORIA POLÍTICA DE LA ARGENTINA PREMODERNA",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "03",
+                "name": "DESAFÍOS SOCIOPOLÍTICOS ACTUALES",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "04",
+                "name": "INGLÉS I",
+                "correlativas": [
+                  "32"
+                ]
+              },
+              {
+                "code": "05",
+                "name": "ANÁLISIS DE DISCURSO Y ESTRATEGIAS DE LIDERAZGO",
+                "correlativas": []
+              },
+              {
+                "code": "48",
+                "name": "1er Año",
+                "correlativas": []
+              },
+              {
+                "code": "11",
+                "name": "HISTORIA MODERNA DE OCCIDENTE",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "12",
+                "name": "CIENCIA Y SOCIEDAD",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "13",
+                "name": "TEORÍA POLÍTICA Y SOCIAL ANTIGUA Y MODERNA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "14",
+                "name": "ESTRUCTURAS POLÍTICAS SUBNACIONALES",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "15",
+                "name": "TALLER DE INFORMÁTICA APLICADA",
+                "correlativas": []
+              },
+              {
+                "code": "32",
+                "name": "2do Año",
+                "correlativas": []
+              },
+              {
+                "code": "21",
+                "name": "DERECHO CONSTITUCIONAL, REPRESENTACIÓN POLÍTICA Y ÓRGANOS DE GOBIERNO",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "22",
+                "name": "OBSERVATORIO DE SISTEMAS POLÍTICOS",
+                "correlativas": [
+                  "01",
+                  "48"
+                ]
+              },
+              {
+                "code": "23",
+                "name": "GOBIERNO TRANSPARENTE Y PARTICIPATIVO EN LA ERA DIGITAL",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "24",
+                "name": "HISTORIA DE LAS RELACIONES INTERNACIONALES",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "25",
+                "name": "SEGURIDAD PÚBLICA Y CIUDADANA",
+                "correlativas": []
+              },
+              {
+                "code": "48",
+                "name": "3er Año",
+                "correlativas": []
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "subjects": [
+              {
+                "code": "05",
+                "name": "ARTE Y CREATIVIDAD",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "06",
+                "name": "PROGRAMACIÓN II",
+                "correlativas": [
+                  "04",
+                  "96"
+                ]
+              },
+              {
+                "code": "07",
+                "name": "MOTORES GRÁFICOS I",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "08",
+                "name": "PROCESO CREADOR DE VIDEOJUEGOS",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "09",
+                "name": "FÍSICA APLICADA",
+                "correlativas": []
+              },
+              {
+                "code": "64",
+                "name": "2do Año",
+                "correlativas": []
+              },
+              {
+                "code": "15",
+                "name": "DISEÑO Y ANIMACIÓN 3D I",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "16",
+                "name": "MODELO DE NEGOCIOS",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "17",
+                "name": "SIMULADORES",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "18",
+                "name": "PROGRAMACIÓN AVANZADA",
+                "correlativas": [
+                  "13",
+                  "96"
+                ]
+              },
+              {
+                "code": "19",
+                "name": "PROYECTO DE INTEGRACIÓN: DISEÑO DE VIDEOJUEGOS",
+                "correlativas": []
+              },
+              {
+                "code": "64",
+                "name": "3er Año",
+                "correlativas": []
+              },
+              {
+                "code": "25",
+                "name": "PRODUCCIÓN DE VIDEOJUEGOS",
+                "correlativas": [
+                  "80"
+                ]
+              },
+              {
+                "code": "26",
+                "name": "PSICOLOGÍA DE LOS VIDEOJUEGOS",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "27",
+                "name": "INVESTIGACIÓN DE MERCADOS",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "28",
+                "name": "GESTIÓN DE LA ORGANIZACIÓN",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "29",
+                "name": "INGLÉS",
+                "correlativas": []
+              },
+              {
+                "code": "64",
+                "name": "Título: TÉCNICO UNIVERSITARIO EN DESARROLLO DE VIDEOJUEGOS",
+                "correlativas": []
+              },
+              {
+                "code": "06",
+                "name": "ANÁLISIS DE LAS RELACIONES INTERNACIONALES",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "07",
+                "name": "GEOGRAFÍA POLÍTICA Y ECONÓMICA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "08",
+                "name": "ELEMENTOS DE ECONOMÍA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "09",
+                "name": "INGLÉS II",
+                "correlativas": [
+                  "04",
+                  "32"
+                ]
+              },
+              {
+                "code": "10",
+                "name": "HISTORIA POLÍTICA DE LA ARGENTINA MODERNA",
+                "correlativas": []
+              },
+              {
+                "code": "48",
+                "name": "2do Año",
+                "correlativas": []
+              },
+              {
+                "code": "16",
+                "name": "HISTORIA CONTEMPORÁNEA DE OCCIDENTE",
+                "correlativas": [
+                  "11",
+                  "48"
+                ]
+              },
+              {
+                "code": "17",
+                "name": "SOCIOLOGÍA POLÍTICA",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "18",
+                "name": "PROYECTOS POLÍTICOS DE AMÉRICA LATINA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "19",
+                "name": "ECONOMÍA INTERNACIONAL: TENDENCIAS Y DESAFÍOS",
+                "correlativas": [
+                  "08",
+                  "48"
+                ]
+              },
+              {
+                "code": "20",
+                "name": "FOCOS DISRUPTIVOS DE LA POLÍTICA INTERNACIONAL",
+                "correlativas": []
+              },
+              {
+                "code": "32",
+                "name": "3er Año",
+                "correlativas": []
+              },
+              {
+                "code": "26",
+                "name": "ÉTICA PROFESIONAL Y TRANSPARENCIA PÚBLICA",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "27",
+                "name": "NEGOCIACIÓN, RESOLUCIÓN DE CONFLICTOS Y TOMA DE DECISIONES",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "28",
+                "name": "TEORÍA POLÍTICA Y SOCIAL CONTEMPORÁNEA",
+                "correlativas": [
+                  "13",
+                  "48"
+                ]
+              },
+              {
+                "code": "29",
+                "name": "LABORATORIO DE ANÁLISIS Y PROYECCIÓN DE DATOS",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "30",
+                "name": "SEMINARIO-TALLER DE INTEGRACIÓN",
+                "correlativas": [
+                  "01",
+                  "20"
+                ]
+              },
+              {
+                "code": "48",
+                "name": "Título: ANALISTA UNIVERSITARIO EN POLÍTICA LOCAL, INTERNACIONAL Y",
+                "correlativas": [
+                  "GOBERNANZA"
+                ]
+              },
+              {
+                "code": "06",
+                "name": "ANÁLISIS DE LAS RELACIONES INTERNACIONALES",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "07",
+                "name": "GEOGRAFÍA POLÍTICA Y ECONÓMICA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "08",
+                "name": "ELEMENTOS DE ECONOMÍA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "09",
+                "name": "INGLÉS II",
+                "correlativas": [
+                  "04",
+                  "32"
+                ]
+              },
+              {
+                "code": "10",
+                "name": "HISTORIA POLÍTICA DE LA ARGENTINA MODERNA",
+                "correlativas": [
+                  "02"
+                ]
+              },
+              {
+                "code": "48",
+                "name": "2do Año",
+                "correlativas": []
+              },
+              {
+                "code": "16",
+                "name": "HISTORIA CONTEMPORÁNEA DE OCCIDENTE",
+                "correlativas": [
+                  "11",
+                  "48"
+                ]
+              },
+              {
+                "code": "17",
+                "name": "SOCIOLOGÍA POLÍTICA",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "18",
+                "name": "PROYECTOS POLÍTICOS DE AMÉRICA LATINA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "19",
+                "name": "ECONOMÍA INTERNACIONAL: TENDENCIAS Y DESAFÍOS",
+                "correlativas": [
+                  "08",
+                  "48"
+                ]
+              },
+              {
+                "code": "20",
+                "name": "FOCOS DISRUPTIVOS DE LA POLÍTICA INTERNACIONAL",
+                "correlativas": []
+              },
+              {
+                "code": "32",
+                "name": "3er Año",
+                "correlativas": []
+              },
+              {
+                "code": "26",
+                "name": "ÉTICA PROFESIONAL Y TRANSPARENCIA PÚBLICA",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "27",
+                "name": "NEGOCIACIÓN, RESOLUCIÓN DE CONFLICTOS Y TOMA DE DECISIONES",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "28",
+                "name": "TEORÍA POLÍTICA Y SOCIAL CONTEMPORÁNEA",
+                "correlativas": [
+                  "13",
+                  "48"
+                ]
+              },
+              {
+                "code": "29",
+                "name": "LABORATORIO DE ANÁLISIS Y PROYECCIÓN DE DATOS",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "30",
+                "name": "SEMINARIO-TALLER DE INTEGRACIÓN",
+                "correlativas": [
+                  "01",
+                  "20"
+                ]
+              },
+              {
+                "code": "48",
+                "name": "Título: ANALISTA UNIVERSITARIO EN POLÍTICA LOCAL, INTERNACIONAL Y",
+                "correlativas": [
+                  "GOBERNANZA"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "numero": 4,
+        "cuatris": [
+          {
+            "numero": 1,
+            "subjects": [
+              {
+                "code": "30",
+                "name": "VIDEOJUEGOS APLICADOS A CONTEXTOS FORMALES",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "31",
+                "name": "MARKETING DIGITAL",
+                "correlativas": [
+                  "80"
+                ]
+              },
+              {
+                "code": "32",
+                "name": "METODOLOGÍA DE LA INVESTIGACIÓN",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "33",
+                "name": "OPTATIVA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "34",
+                "name": "INGLÉS APLICADO",
+                "correlativas": [
+                  "29"
+                ]
+              },
+              {
+                "code": "64",
+                "name": "4to Año",
+                "correlativas": []
+              },
+              {
+                "code": "31",
+                "name": "SEMINARIO DE NEGOCIOS INTERNACIONALES",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "32",
+                "name": "TEORÍA DE LAS RELACIONES INTERNACIONALES",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "33",
+                "name": "HERRAMIENTAS DE ANÁLISIS DE LA POLÍTICA EXTERIOR ARGENTINA",
+                "correlativas": [
+                  "24",
+                  "48"
+                ]
+              },
+              {
+                "code": "34",
+                "name": "TALLER DE POLÍTICA INTERNACIONAL CONTEMPORÁNEA",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "35",
+                "name": "TALLER DE TRABAJO FINAL",
+                "correlativas": []
+              },
+              {
+                "code": "48",
+                "name": "4to Año",
+                "correlativas": []
+              },
+              {
+                "code": "31",
+                "name": "PLANIFICACIÓN DE POLÍTICAS PÚBLICAS",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "32",
+                "name": "MEDIOS DE COMUNICACIÓN Y ESTUDIOS DE OPINIÓN PÚBLICA",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "33",
+                "name": "TENDENCIAS DEL DERECHO ADMINISTRATIVO",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "34",
+                "name": "ESTUDIO DE LOS SISTEMAS ELECTORALES",
+                "correlativas": [
+                  "22",
+                  "48"
+                ]
+              },
+              {
+                "code": "35",
+                "name": "TALLER DE TRABAJO FINAL",
+                "correlativas": []
+              },
+              {
+                "code": "48",
+                "name": "4to Año",
+                "correlativas": []
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "subjects": [
+              {
+                "code": "35",
+                "name": "SEMINARIO DE TECNOLOGÍA E INNOVACIÓN",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "36",
+                "name": "COMERCIO INTERNACIONAL",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "37",
+                "name": "LEGISLACIÓN Y ÉTICA PROFESIONAL",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "38",
+                "name": "OPTATIVA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "39",
+                "name": "TALLER DE TRABAJO FINAL",
+                "correlativas": [
+                  "33",
+                  "96"
+                ]
+              },
+              {
+                "code": "40",
+                "name": "TRABAJO FINAL",
+                "correlativas": [
+                  "01",
+                  "02",
+                  "03",
+                  "04",
+                  "05",
+                  "06",
+                  "07",
+                  "08",
+                  "09",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19",
+                  "20",
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26",
+                  "27",
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33",
+                  "34",
+                  "35",
+                  "36",
+                  "37",
+                  "38",
+                  "39"
+                ]
+              },
+              {
+                "code": "36",
+                "name": "FORO DE DERECHO INTERNACIONAL PÚBLICO",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "37",
+                "name": "OBSERVATORIO DE SEGURIDAD Y POLÍTICA INTERNACIONAL Y DELITOS",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "38",
+                "name": "SEMINARIO DE INTEGRACIÓN REGIONAL Y GLOBALIZACIÓN",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "39",
+                "name": "PRÁCTICA PRE-PROFESIONAL",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "40",
+                "name": "EXPERIENCIAS FORMATIVAS OBLIGATORIAS DE CARÁCTER ELECTIVAS",
+                "correlativas": []
+              },
+              {
+                "code": "41",
+                "name": "TRABAJO FINAL",
+                "correlativas": [
+                  "01",
+                  "02",
+                  "03",
+                  "04",
+                  "05",
+                  "06",
+                  "07",
+                  "08",
+                  "09",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19",
+                  "20",
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26",
+                  "27",
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33",
+                  "34",
+                  "35",
+                  "36",
+                  "37",
+                  "38",
+                  "39",
+                  "40"
+                ]
+              },
+              {
+                "code": "48",
+                "name": "Título: LICENCIATURA EN RELACIONES INTERNACIONALES",
+                "correlativas": []
+              },
+              {
+                "code": "36",
+                "name": "PARTIDOS POLÍTICOS, MOVIMIENTOS Y GRUPOS DE PRESIÓN",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "37",
+                "name": "LABORATORIO DE MONITOREO Y EVALUACIÓN DE POLÍTICAS PÚBLICAS",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "38",
+                "name": "COMUNICACIÓN DE GOBIERNO Y MARKETING POLÍTICO",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "39",
+                "name": "PRÁCTICA PRE-PROFESIONAL",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "40",
+                "name": "EXPERIENCIAS FORMATIVAS OBLIGATORIAS DE CARÁCTER ELECTIVAS",
+                "correlativas": []
+              },
+              {
+                "code": "41",
+                "name": "TRABAJO FINAL",
+                "correlativas": [
+                  "01",
+                  "02",
+                  "03",
+                  "04",
+                  "05",
+                  "06",
+                  "07",
+                  "08",
+                  "09",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19",
+                  "20",
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26",
+                  "27",
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33",
+                  "34",
+                  "35",
+                  "36",
+                  "37",
+                  "38",
+                  "39",
+                  "40"
+                ]
+              },
+              {
+                "code": "48",
+                "name": "Título: LICENCIADO EN CIENCIA POLÍTICA Y GOBIERNO",
+                "correlativas": [
+                  "2104",
+                  "2104"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nombre": "ARQUITECTURA",
+    "anios": [
+      {
+        "numero": 1,
+        "cuatris": [
+          {
+            "numero": 1,
+            "subjects": [
+              {
+                "code": "01",
+                "name": "INTRODUCCIÓN A LA ARQUITECTURA",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "02",
+                "name": "INTRODUCCIÓN AL PROYECTO",
+                "correlativas": [
+                  "80"
+                ]
+              },
+              {
+                "code": "03",
+                "name": "CONSTRUCCIONES I",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "04",
+                "name": "MATEMÁTICA APLICADA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "05",
+                "name": "MEDIOS EXPRESIVOS",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "06",
+                "name": "TALLER DE PRODUCCIÓN DIGITAL",
+                "correlativas": []
+              },
+              {
+                "code": "32",
+                "name": "1er Año",
+                "correlativas": []
+              },
+              {
+                "code": "13",
+                "name": "TEORÍA E HISTORIA DE LA ARQUITECTURA Y EL URBANISMO DE LA MODERNIDAD I",
+                "correlativas": [
+                  "07",
+                  "48"
+                ]
+              },
+              {
+                "code": "14",
+                "name": "CONSTRUCCIONES DE BAJA COMPLEJIDAD",
+                "correlativas": [
+                  "08",
+                  "48"
+                ]
+              },
+              {
+                "code": "15",
+                "name": "ESTABILIDAD ESTRUCTURAL",
+                "correlativas": [
+                  "09",
+                  "48"
+                ]
+              },
+              {
+                "code": "16",
+                "name": "EXPRESIÓN II",
+                "correlativas": [
+                  "10",
+                  "32"
+                ]
+              },
+              {
+                "code": "17",
+                "name": "TALLER DE CONSTRUCCIÓN VIRTUAL II",
+                "correlativas": [
+                  "11",
+                  "48"
+                ]
+              },
+              {
+                "code": "18",
+                "name": "PROYECTO II",
+                "correlativas": [
+                  "12"
+                ]
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "subjects": [
+              {
+                "code": "07",
+                "name": "TEORÍA E HISTORIA DE LA ARQUITECTURA Y EL URBANISMO HASTA EL SIGLO XIX",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "08",
+                "name": "CONSTRUCCIONES II",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "09",
+                "name": "FÍSICA APLICADA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "10",
+                "name": "EXPRESIÓN I",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "11",
+                "name": "TALLER DE CONSTRUCCIÓN VIRTUAL I",
+                "correlativas": [
+                  "32"
+                ]
+              },
+              {
+                "code": "12",
+                "name": "PROYECTO I",
+                "correlativas": [
+                  "02"
+                ]
+              },
+              {
+                "code": "80",
+                "name": "2do Año",
+                "correlativas": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "numero": 2,
+        "cuatris": [
+          {
+            "numero": 2,
+            "subjects": [
+              {
+                "code": "19",
+                "name": "TEORÍA E HISTORIA DE LA ARQUITECTURA Y EL URBANISMO DE LA MODERNIDAD II",
+                "correlativas": [
+                  "07",
+                  "48"
+                ]
+              },
+              {
+                "code": "20",
+                "name": "CONSTRUCCIONES E INSTALACIONES DE BAJA COMPLEJIDAD",
+                "correlativas": [
+                  "08",
+                  "64"
+                ]
+              },
+              {
+                "code": "21",
+                "name": "ESTRUCTURAS SIMPLES",
+                "correlativas": [
+                  "09",
+                  "48"
+                ]
+              },
+              {
+                "code": "22",
+                "name": "LABORATORIO DE MATERIA Y FORMA",
+                "correlativas": [
+                  "32"
+                ]
+              },
+              {
+                "code": "23",
+                "name": "TALLER DE CONSTRUCCIÓN VIRTUAL III",
+                "correlativas": [
+                  "11",
+                  "48"
+                ]
+              },
+              {
+                "code": "24",
+                "name": "PROYECTO III",
+                "correlativas": [
+                  "11"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "numero": 3,
+        "cuatris": [
+          {
+            "numero": 1,
+            "subjects": [
+              {
+                "code": "25",
+                "name": "TEORÍA Y CRÍTICA DE LA ARQUITECTURA Y EL URBANISMO CONTEMPORÁNEO I",
+                "correlativas": [
+                  "13",
+                  "48"
+                ]
+              },
+              {
+                "code": "26",
+                "name": "CONSTRUCCIONES E INSTALACIONES DE MEDIANA COMPLEJIDAD I",
+                "correlativas": [
+                  "14",
+                  "64"
+                ]
+              },
+              {
+                "code": "27",
+                "name": "ESTRUCTURAS EN HORMIGÓN ARMADO",
+                "correlativas": [
+                  "15",
+                  "48"
+                ]
+              },
+              {
+                "code": "28",
+                "name": "MORFOLOGÍA URBANA",
+                "correlativas": [
+                  "16",
+                  "18",
+                  "32"
+                ]
+              },
+              {
+                "code": "29",
+                "name": "TALLER DE CONSTRUCCIÓN VIRTUAL IV",
+                "correlativas": [
+                  "17",
+                  "32"
+                ]
+              },
+              {
+                "code": "30",
+                "name": "PROYECTO IV",
+                "correlativas": [
+                  "14",
+                  "16",
+                  "24"
+                ]
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "subjects": [
+              {
+                "code": "31",
+                "name": "TEORÍA Y CRÍTICA DE LA ARQUITECTURA Y EL URBANISMO CONTEMPORÁNEO II",
+                "correlativas": [
+                  "13",
+                  "48"
+                ]
+              },
+              {
+                "code": "32",
+                "name": "TALLER DE CONSTRUCCIÓN VIRTUAL V",
+                "correlativas": [
+                  "17",
+                  "32"
+                ]
+              },
+              {
+                "code": "33",
+                "name": "CONSTRUCCIONES E INSTALACIONES DE MEDIANA COMPLEJIDAD II",
+                "correlativas": [
+                  "14",
+                  "64"
+                ]
+              },
+              {
+                "code": "34",
+                "name": "ESTRUCTURAS PARA EDIFICIOS EN ALTURA",
+                "correlativas": [
+                  "15",
+                  "48"
+                ]
+              },
+              {
+                "code": "35",
+                "name": "TERRITORIO Y PAISAJE URBANO",
+                "correlativas": [
+                  "16",
+                  "18",
+                  "32"
+                ]
+              },
+              {
+                "code": "36",
+                "name": "PROYECTO V",
+                "correlativas": [
+                  "14",
+                  "16",
+                  "24"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "numero": 4,
+        "cuatris": [
+          {
+            "numero": 1,
+            "subjects": [
+              {
+                "code": "37",
+                "name": "ESTUDIOS DEL PATRIMONIO",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "38",
+                "name": "PLANEAMIENTO TERRITORIAL Y URBANO I",
+                "correlativas": [
+                  "25",
+                  "28",
+                  "30",
+                  "64"
+                ]
+              },
+              {
+                "code": "39",
+                "name": "PLANIFICACIÓN ESTRATÉGICA DE OBRAS",
+                "correlativas": [
+                  "26",
+                  "48"
+                ]
+              },
+              {
+                "code": "40",
+                "name": "SISTEMAS DE ALTA COMPLEJIDAD I",
+                "correlativas": [
+                  "26",
+                  "27",
+                  "64"
+                ]
+              },
+              {
+                "code": "41",
+                "name": "PROYECTO VI",
+                "correlativas": [
+                  "26",
+                  "27",
+                  "36"
+                ]
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "subjects": [
+              {
+                "code": "42",
+                "name": "TALLER DE INVESTIGACIÓN PROYECTUAL I",
+                "correlativas": [
+                  "25",
+                  "30",
+                  "48"
+                ]
+              },
+              {
+                "code": "43",
+                "name": "PLANEAMIENTO TERRITORIAL Y URBANO II",
+                "correlativas": [
+                  "25",
+                  "28",
+                  "30",
+                  "64"
+                ]
+              },
+              {
+                "code": "44",
+                "name": "TALLER DE GESTIÓN DE PROYECTOS",
+                "correlativas": [
+                  "26",
+                  "48"
+                ]
+              },
+              {
+                "code": "45",
+                "name": "SISTEMAS DE ALTA COMPLEJIDAD II",
+                "correlativas": [
+                  "26",
+                  "27",
+                  "64"
+                ]
+              },
+              {
+                "code": "46",
+                "name": "PROYECTO VII",
+                "correlativas": [
+                  "26",
+                  "27",
+                  "36"
+                ]
+              },
+              {
+                "code": "47",
+                "name": "PRÁCTICA PROFESIONAL ASISTIDA",
+                "correlativas": [
+                  "01",
+                  "02",
+                  "03",
+                  "04",
+                  "05",
+                  "06",
+                  "07",
+                  "08",
+                  "09",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19",
+                  "20",
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26",
+                  "27",
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33",
+                  "34",
+                  "35",
+                  "36"
+                ]
+              },
+              {
+                "code": "96",
+                "name": "5to Año",
+                "correlativas": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "numero": 5,
+        "cuatris": [
+          {
+            "numero": 1,
+            "subjects": [
+              {
+                "code": "48",
+                "name": "DESARROLLO DE EMPRENDIMIENTOS",
+                "correlativas": [
+                  "01",
+                  "02",
+                  "03",
+                  "04",
+                  "05",
+                  "06",
+                  "07",
+                  "08",
+                  "09",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19",
+                  "20",
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26",
+                  "27",
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33",
+                  "34",
+                  "35",
+                  "36",
+                  "48"
+                ]
+              },
+              {
+                "code": "49",
+                "name": "GESTIÓN EJECUTIVA DEL PROYECTO I",
+                "correlativas": [
+                  "01",
+                  "02",
+                  "03",
+                  "04",
+                  "05",
+                  "06",
+                  "07",
+                  "08",
+                  "09",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19",
+                  "20",
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26",
+                  "27",
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33",
+                  "34",
+                  "35",
+                  "36",
+                  "64"
+                ]
+              },
+              {
+                "code": "50",
+                "name": "TALLER DE INVESTIGACIÓN PROYECTUAL II",
+                "correlativas": [
+                  "42",
+                  "48"
+                ]
+              },
+              {
+                "code": "51",
+                "name": "PROYECTO FINAL DE CARRERA I",
+                "correlativas": [
+                  "01",
+                  "02",
+                  "03",
+                  "04",
+                  "05",
+                  "06",
+                  "07",
+                  "08",
+                  "09",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19",
+                  "20",
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26",
+                  "27",
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33",
+                  "34",
+                  "35",
+                  "36",
+                  "37",
+                  "38",
+                  "39",
+                  "40",
+                  "41",
+                  "42",
+                  "43",
+                  "44",
+                  "45",
+                  "46"
+                ]
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "subjects": [
+              {
+                "code": "52",
+                "name": "PROBLEMÁTICAS DE LA ARQUITECTURA CONTEMPORÁNEA",
+                "correlativas": [
+                  "01",
+                  "02",
+                  "03",
+                  "04",
+                  "05",
+                  "06",
+                  "07",
+                  "08",
+                  "09",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19",
+                  "20",
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26",
+                  "27",
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33",
+                  "34",
+                  "35",
+                  "36",
+                  "32"
+                ]
+              },
+              {
+                "code": "53",
+                "name": "GESTIÓN EJECUTIVA DEL PROYECTO II",
+                "correlativas": [
+                  "01",
+                  "02",
+                  "03",
+                  "04",
+                  "05",
+                  "06",
+                  "07",
+                  "08",
+                  "09",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19",
+                  "20",
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26",
+                  "27",
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33",
+                  "34",
+                  "35",
+                  "36",
+                  "64"
+                ]
+              },
+              {
+                "code": "54",
+                "name": "SALUD Y SEGURIDAD EN LA CONSTRUCCIÓN",
+                "correlativas": [
+                  "01",
+                  "02",
+                  "03",
+                  "04",
+                  "05",
+                  "06",
+                  "07",
+                  "08",
+                  "09",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19",
+                  "20",
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26",
+                  "27",
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33",
+                  "34",
+                  "35",
+                  "36",
+                  "48"
+                ]
+              },
+              {
+                "code": "55",
+                "name": "TALLER DE INVESTIGACIÓN PROYECTUAL III",
+                "correlativas": [
+                  "50",
+                  "48"
+                ]
+              },
+              {
+                "code": "56",
+                "name": "EXPERIENCIAS FORMATIVAS OBLIGATORIAS DE CARÁCTER ELECTIVO",
+                "correlativas": [
+                  "80"
+                ]
+              },
+              {
+                "code": "57",
+                "name": "PROYECTO FINAL DE CARRERA II",
+                "correlativas": [
+                  "50",
+                  "51"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nombre": "LICENCIATURA EN DISEÑO DE INTERIORES",
+    "anios": [
+      {
+        "numero": 1,
+        "cuatris": [
+          {
+            "numero": 1,
+            "subjects": [
+              {
+                "code": "01",
+                "name": "INTRODUCCIÓN AL DISEÑO",
+                "correlativas": [
+                  "96"
+                ]
+              },
+              {
+                "code": "02",
+                "name": "TALLER DE DIBUJO Y REPRESENTACIÓN",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "03",
+                "name": "ESTRUCTURAS Y MUROS",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "04",
+                "name": "TALLER DE MODELADO",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "05",
+                "name": "EL ARTE Y EL ESPACIO CONTEMPORÁNEO",
+                "correlativas": []
+              },
+              {
+                "code": "48",
+                "name": "1er Año",
+                "correlativas": []
+              },
+              {
+                "code": "11",
+                "name": "DISEÑO DE ESPACIOS RESIDENCIALES II",
+                "correlativas": [
+                  "06",
+                  "96"
+                ]
+              },
+              {
+                "code": "12",
+                "name": "SEMIÓTICA APLICADA AL DISEÑO",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "13",
+                "name": "ELECTRICIDAD Y LUMINOTECNIA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "14",
+                "name": "MODELIZACIÓN DIGITAL I",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "15",
+                "name": "HISTORIA DEL ARTE Y DEL ESPACIO I",
+                "correlativas": []
+              },
+              {
+                "code": "64",
+                "name": "2do Año",
+                "correlativas": []
+              },
+              {
+                "code": "21",
+                "name": "DISEÑO DE ESPACIOS GASTRONÓMICOS",
+                "correlativas": [
+                  "96"
+                ]
+              },
+              {
+                "code": "22",
+                "name": "DISEÑO DE OBJETOS",
+                "correlativas": [
+                  "02",
+                  "07",
+                  "64"
+                ]
+              },
+              {
+                "code": "23",
+                "name": "GESTIÓN DE PROYECTOS APLICADOS AL DISEÑO",
+                "correlativas": [
+                  "20",
+                  "48"
+                ]
+              },
+              {
+                "code": "24",
+                "name": "RECURSOS DIGITALES PARA ARQUITECTURA",
+                "correlativas": [
+                  "19",
+                  "64"
+                ]
+              },
+              {
+                "code": "25",
+                "name": "HISTORIA DEL ARTE Y DEL ESPACIO II",
+                "correlativas": []
+              },
+              {
+                "code": "64",
+                "name": "3er Año",
+                "correlativas": []
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "subjects": [
+              {
+                "code": "06",
+                "name": "DISEÑO DE ESPACIOS RESIDENCIALES I",
+                "correlativas": [
+                  "96"
+                ]
+              },
+              {
+                "code": "07",
+                "name": "TALLER DE FUNDAMENTOS VISUALES",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "08",
+                "name": "CERRAMIENTOS Y TERMINACIONES",
+                "correlativas": [
+                  "03",
+                  "64"
+                ]
+              },
+              {
+                "code": "09",
+                "name": "ERGONOMÍA",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "10",
+                "name": "INTRODUCCIÓN AL PENSAMIENTO CIENTÍFICO",
+                "correlativas": []
+              },
+              {
+                "code": "64",
+                "name": "2do Año",
+                "correlativas": []
+              },
+              {
+                "code": "16",
+                "name": "DISEÑO DE ESPACIOS COMERCIALES",
+                "correlativas": [
+                  "96"
+                ]
+              },
+              {
+                "code": "17",
+                "name": "DISEÑO DE STANDS",
+                "correlativas": [
+                  "02",
+                  "07",
+                  "64"
+                ]
+              },
+              {
+                "code": "18",
+                "name": "INSTALACIONES COMPLEMENTARIA Y ACONDICIONAMIENTO DE AIRE",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "19",
+                "name": "MODELIZACIÓN DIGITAL II",
+                "correlativas": [
+                  "14",
+                  "64"
+                ]
+              },
+              {
+                "code": "20",
+                "name": "INTRODUCCIÓN AL MARKETING",
+                "correlativas": []
+              },
+              {
+                "code": "64",
+                "name": "3er Año",
+                "correlativas": []
+              },
+              {
+                "code": "26",
+                "name": "DISEÑO DE ESPACIOS CORPORATIVOS",
+                "correlativas": [
+                  "96"
+                ]
+              },
+              {
+                "code": "27",
+                "name": "DISEÑO DE MOBILIARIO",
+                "correlativas": [
+                  "02",
+                  "07",
+                  "64"
+                ]
+              },
+              {
+                "code": "28",
+                "name": "DOCUMENTACIÓN Y ADMINISTRACIÓN DE OBRA",
+                "correlativas": [
+                  "04",
+                  "08",
+                  "13",
+                  "18",
+                  "48"
+                ]
+              },
+              {
+                "code": "29",
+                "name": "ÉTICA, DEONTOLOGÍA Y LEGISLACIÓN APLICADA AL DISEÑO",
+                "correlativas": [
+                  "48"
+                ]
+              },
+              {
+                "code": "30",
+                "name": "SEMINARIO TALLER DE INTEGRACIÓN I: ESPACIO RESIDENCIAL-COMERCIAL",
+                "correlativas": [
+                  "03",
+                  "08",
+                  "28"
+                ]
+              },
+              {
+                "code": "64",
+                "name": "Título: TÉCNICO UNIVERSITARIO EN DISEÑO DE INTERIORES",
+                "correlativas": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "numero": 4,
+        "cuatris": [
+          {
+            "numero": 1,
+            "subjects": [
+              {
+                "code": "31",
+                "name": "DISEÑO DE ESPACIOS HOTELEROS",
+                "correlativas": [
+                  "96"
+                ]
+              },
+              {
+                "code": "32",
+                "name": "DISEÑO ESCENOGRÁFICOS",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "33",
+                "name": "TECNOLOGÍAS SUSTENTABLES",
+                "correlativas": [
+                  "04",
+                  "08",
+                  "13",
+                  "18",
+                  "64"
+                ]
+              },
+              {
+                "code": "34",
+                "name": "PLAN DE NEGOCIOS APLICADO AL DISEÑO",
+                "correlativas": [
+                  "23",
+                  "48"
+                ]
+              },
+              {
+                "code": "35",
+                "name": "PATRIMONIO Y RECICLAJE",
+                "correlativas": []
+              },
+              {
+                "code": "48",
+                "name": "4to Año",
+                "correlativas": []
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "subjects": [
+              {
+                "code": "36",
+                "name": "DISEÑO DE ESPACIOS HOSPITALARIOS",
+                "correlativas": [
+                  "96"
+                ]
+              },
+              {
+                "code": "37",
+                "name": "DISEÑO DE ESPACIOS VERDES",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "38",
+                "name": "INNOVACIÓN Y DISEÑO DIGITAL",
+                "correlativas": [
+                  "24",
+                  "48"
+                ]
+              },
+              {
+                "code": "39",
+                "name": "SEMINARIO TALLER DE INTEGRACIÓN II: ESPACIO PARA LA SALUD",
+                "correlativas": [
+                  "30",
+                  "36",
+                  "64"
+                ]
+              },
+              {
+                "code": "40",
+                "name": "PRÁCTICA PROFESIONAL",
+                "correlativas": [
+                  "30",
+                  "64"
+                ]
+              },
+              {
+                "code": "41",
+                "name": "TRABAJO FINAL",
+                "correlativas": [
+                  "01",
+                  "02",
+                  "03",
+                  "04",
+                  "05",
+                  "06",
+                  "07",
+                  "08",
+                  "09",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19",
+                  "20",
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26",
+                  "27",
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33",
+                  "34",
+                  "35",
+                  "36",
+                  "37",
+                  "38",
+                  "39",
+                  "40"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nombre": "LICENCIATURA EN PSICOLOGÍA",
+    "anios": [
+      {
+        "numero": 1,
+        "cuatris": [
+          {
+            "numero": 1,
+            "subjects": [
+              {
+                "code": "01",
+                "name": "TEORÍAS Y SISTEMAS PSICOLÓGICOS I",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "02",
+                "name": "PROCESOS PSICOLÓGICOS BÁSICOS I",
+                "correlativas": [
+                  "80"
+                ]
+              },
+              {
+                "code": "03",
+                "name": "BASES BIOLÓGICAS Y NEUROLÓGICAS DEL COMPORTAMIENTO",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "04",
+                "name": "FILOSOFÍA",
+                "correlativas": [
+                  "80"
+                ]
+              },
+              {
+                "code": "05",
+                "name": "TALLER DE INFORMÁTICA I",
+                "correlativas": []
+              },
+              {
+                "code": "32",
+                "name": "1er Año",
+                "correlativas": []
+              },
+              {
+                "code": "12",
+                "name": "PSICOANÁLISIS I",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "13",
+                "name": "PSICOLOGÍA DEL DESARROLLO I",
+                "correlativas": [
+                  "06",
+                  "80"
+                ]
+              },
+              {
+                "code": "14",
+                "name": "FUNDAMENTOS EPISTEMOLÓGICOS Y METODOLÓGICOS",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "15",
+                "name": "PROBLEMÁTICAS SOCIOLÓGICAS Y ANTROPOLÓGICAS",
+                "correlativas": [
+                  "80"
+                ]
+              },
+              {
+                "code": "16",
+                "name": "INGLÉS I",
+                "correlativas": []
+              },
+              {
+                "code": "32",
+                "name": "2do Año",
+                "correlativas": []
+              },
+              {
+                "code": "23",
+                "name": "PSICOPATOLOGÍA I",
+                "correlativas": [
+                  "17",
+                  "18",
+                  "80"
+                ]
+              },
+              {
+                "code": "24",
+                "name": "PSICOANÁLISIS III: POST FREUDIANOS Y CONTEMPORÁNEOS",
+                "correlativas": [
+                  "17",
+                  "64"
+                ]
+              },
+              {
+                "code": "25",
+                "name": "PSICOLOGÍA SOCIAL",
+                "correlativas": [
+                  "80"
+                ]
+              },
+              {
+                "code": "26",
+                "name": "TEORÍA Y TÉCNICA DE GRUPOS",
+                "correlativas": []
+              },
+              {
+                "code": "80",
+                "name": "3er Año",
+                "correlativas": []
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "subjects": [
+              {
+                "code": "06",
+                "name": "TEORÍAS Y SISTEMAS PSICOLÓGICOS II",
+                "correlativas": [
+                  "01",
+                  "64"
+                ]
+              },
+              {
+                "code": "07",
+                "name": "PROCESOS PSICOLÓGICOS BÁSICOS II",
+                "correlativas": [
+                  "02",
+                  "80"
+                ]
+              },
+              {
+                "code": "08",
+                "name": "NEUROPSICOLOGÍA",
+                "correlativas": [
+                  "03",
+                  "80"
+                ]
+              },
+              {
+                "code": "09",
+                "name": "PROBLEMÁTICA DEL MUNDO ACTUAL",
+                "correlativas": [
+                  "64"
+                ]
+              },
+              {
+                "code": "10",
+                "name": "SEMIOLOGÍA Y COMUNICACIÓN HUMANA",
+                "correlativas": [
+                  "80"
+                ]
+              },
+              {
+                "code": "11",
+                "name": "TALLER DE INFORMÁTICA II",
+                "correlativas": [
+                  "05"
+                ]
+              },
+              {
+                "code": "32",
+                "name": "2do Año",
+                "correlativas": []
+              },
+              {
+                "code": "22",
+                "name": "SEMINARIO-TALLER DE INTEGRACIÓN I",
+                "correlativas": []
+              },
+              {
+                "code": "64",
+                "name": "2do Año",
+                "correlativas": []
+              },
+              {
+                "code": "17",
+                "name": "PSICOANÁLISIS II",
+                "correlativas": [
+                  "12",
+                  "64"
+                ]
+              },
+              {
+                "code": "18",
+                "name": "PSICOLOGÍA DEL DESARROLLO II",
+                "correlativas": [
+                  "13",
+                  "80"
+                ]
+              },
+              {
+                "code": "19",
+                "name": "METODOLOGÍA: DISEÑOS CUANTITATIVOS",
+                "correlativas": [
+                  "14",
+                  "64"
+                ]
+              },
+              {
+                "code": "20",
+                "name": "ESTADÍSTICA APLICADA A LA PSICOLOGÍA",
+                "correlativas": [
+                  "14",
+                  "64"
+                ]
+              },
+              {
+                "code": "21",
+                "name": "INGLÉS II",
+                "correlativas": [
+                  "16"
+                ]
+              },
+              {
+                "code": "32",
+                "name": "3er Año",
+                "correlativas": []
+              },
+              {
+                "code": "32",
+                "name": "SEMINARIO-TALLER DE INTEGRACIÓN II",
+                "correlativas": [
+                  "19",
+                  "20"
+                ]
+              },
+              {
+                "code": "64",
+                "name": "3er Año",
+                "correlativas": []
+              },
+              {
+                "code": "27",
+                "name": "PSICOPATOLOGÍA II",
+                "correlativas": [
+                  "23",
+                  "80"
+                ]
+              },
+              {
+                "code": "28",
+                "name": "PSICOPATOLOGÍA PSICOANALÍTICA",
+                "correlativas": [
+                  "24",
+                  "64"
+                ]
+              },
+              {
+                "code": "29",
+                "name": "METODOLOGÍA: DISEÑOS CUALITATIVOS",
+                "correlativas": [
+                  "14",
+                  "64"
+                ]
+              },
+              {
+                "code": "30",
+                "name": "PSICOLOGÍA COMUNITARIA",
+                "correlativas": [
+                  "25",
+                  "80"
+                ]
+              },
+              {
+                "code": "31",
+                "name": "SALUD PÚBLICA Y SALUD MENTAL",
+                "correlativas": [
+                  "14",
+                  "23"
+                ]
+              },
+              {
+                "code": "64",
+                "name": "4to Año",
+                "correlativas": []
+              },
+              {
+                "code": "41",
+                "name": "SEMINARIO-TALLER DE INTEGRACIÓN III",
+                "correlativas": [
+                  "32"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "numero": 4,
+        "cuatris": [
+          {
+            "numero": 1,
+            "subjects": [
+              {
+                "code": "33",
+                "name": "TÉCNICAS DE EXPLORACIÓN PSICOLÓGICA I",
+                "correlativas": [
+                  "27",
+                  "80"
+                ]
+              },
+              {
+                "code": "34",
+                "name": "CLÍNICA DE NIÑOS Y ADOLESCENTES",
+                "correlativas": [
+                  "27",
+                  "80"
+                ]
+              },
+              {
+                "code": "35",
+                "name": "PSICOLOGÍA EDUCACIONAL",
+                "correlativas": [
+                  "18",
+                  "80"
+                ]
+              },
+              {
+                "code": "36",
+                "name": "PSICOFARMACOLOGÍA",
+                "correlativas": [
+                  "08",
+                  "27"
+                ]
+              },
+              {
+                "code": "64",
+                "name": "4to Año",
+                "correlativas": []
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "subjects": [
+              {
+                "code": "37",
+                "name": "TÉCNICAS DE EXPLORACIÓN PSICOLÓGICA II",
+                "correlativas": [
+                  "33",
+                  "80"
+                ]
+              },
+              {
+                "code": "38",
+                "name": "CLÍNICA DE ADULTOS",
+                "correlativas": [
+                  "27",
+                  "80"
+                ]
+              },
+              {
+                "code": "39",
+                "name": "PSICOLOGÍA INSTITUCIONAL",
+                "correlativas": [
+                  "25",
+                  "64"
+                ]
+              },
+              {
+                "code": "40",
+                "name": "OPTATIVA",
+                "correlativas": []
+              },
+              {
+                "code": "64",
+                "name": "5to Año",
+                "correlativas": []
+              },
+              {
+                "code": "49",
+                "name": "PRÁCTICA PROFESIONAL SUPERVISADA",
+                "correlativas": [
+                  "34",
+                  "35",
+                  "37",
+                  "38",
+                  "39"
+                ]
+              },
+              {
+                "code": "50",
+                "name": "TALLER DE TESIS",
+                "correlativas": [
+                  "41",
+                  "80"
+                ]
+              },
+              {
+                "code": "51",
+                "name": "TESIS",
+                "correlativas": [
+                  "01",
+                  "02",
+                  "03",
+                  "04",
+                  "05",
+                  "06",
+                  "07",
+                  "08",
+                  "09",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19",
+                  "20",
+                  "21",
+                  "22",
+                  "23",
+                  "24",
+                  "25",
+                  "26",
+                  "27",
+                  "28",
+                  "29",
+                  "30",
+                  "31",
+                  "32",
+                  "33",
+                  "34",
+                  "35",
+                  "36",
+                  "37",
+                  "38",
+                  "39",
+                  "40",
+                  "41",
+                  "42",
+                  "43",
+                  "44",
+                  "45",
+                  "46",
+                  "47",
+                  "48",
+                  "49",
+                  "50"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "numero": 5,
+        "cuatris": [
+          {
+            "numero": 1,
+            "subjects": [
+              {
+                "code": "42",
+                "name": "INTEGRACIÓN PSICODIAGNÓSTICA",
+                "correlativas": [
+                  "37",
+                  "80"
+                ]
+              },
+              {
+                "code": "43",
+                "name": "MÉTODOS Y TÉCNICAS PSICOTERAPÉUTICAS",
+                "correlativas": [
+                  "38",
+                  "80"
+                ]
+              },
+              {
+                "code": "44",
+                "name": "PSICOLOGÍA LABORAL Y ORGANIZACIONAL",
+                "correlativas": [
+                  "39",
+                  "80"
+                ]
+              },
+              {
+                "code": "45",
+                "name": "OPTATIVA",
+                "correlativas": []
+              },
+              {
+                "code": "64",
+                "name": "5to Año",
+                "correlativas": []
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "subjects": [
+              {
+                "code": "46",
+                "name": "ORIENTACIÓN VOCACIONAL Y PROFESIONAL",
+                "correlativas": [
+                  "35",
+                  "80"
+                ]
+              },
+              {
+                "code": "47",
+                "name": "PSICOLOGÍA JURÍDICA-FORENSE",
+                "correlativas": [
+                  "37",
+                  "80"
+                ]
+              },
+              {
+                "code": "48",
+                "name": "ÉTICA Y DEONTOLOGÍA PROFESIONAL",
+                "correlativas": []
+              },
+              {
+                "code": "80",
+                "name": "Título: LICENCIADO EN PSICOLOGIA",
+                "correlativas": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+];

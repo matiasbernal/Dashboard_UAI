@@ -1,0 +1,14 @@
+# Scripts de parche (Python)
+patch_*.py
+split.py
+pdf_text*.txt
+pdf_text.txt
+parse_careers.py
+
+# Archivos de datos originales (opcional, si no los querés en GitHub)
+# Carreras y materias.pdf
+# carreras.json
+
+# Sistema
+.DS_Store
+Thumbs.db
